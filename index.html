@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/stylePlantilla.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+<title>Semana</title>
+</head>
+  <body>
+	<header>
+		<ul class="tabNav-Especiales fixed">
+			<li><a target="_blank" href="http://www.semana.com/"><img src="img/logosemana.svg"></a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/nacion/3-1">Nación</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/opinion-online/81-1">Opinión</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/economia/4-1">Economía</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/vida-moderna/7-1">Vida Moderna</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/gente/8-1">Gente</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/cultura/6-1">Cultura</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/mundo/5-1">Mundo</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/tecnologia/252-1">Tecnología</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/educacion/64-1">Educación</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/deportes/20-1">Deportes</a></li>
+			<li><a target="_blank" href="http://www.semana.com/seccion/edicion-impresa/60">Edición impresa</a></li>
+			<li><a target="_blank" href="http://sostenibilidad.semana.com/">Sostenibilidad</a></li>
+			<li class="dropdownNavEspecial">
+				<a href="http://www.semana.com/videos" target="_blank" class="iconEspecialNavTab"><i class="icon-video ico-navEspeciales"></i></a>
+					<div class="dropdown-contentEspecial">
+					    <p>Video</p>
+					</div>
+			</li>
+			<li class="dropdownNavEspecial">
+				<a href="http://www.semana.com/fotos" target="_blank" class="iconEspecialNavTab"><i class="icon-galeria ico-navEspeciales"></i></a>
+					<div class="dropdown-contentEspecial">
+						    <p>Galerías</p>
+					</div>
+			</li>
+			<li class="dropdownNavEspecial">
+				<a href="http://www.semana.com/especiales" target="_blank" class="iconEspecialNavTab"><i class="icon-especiales ico-navEspeciales"></i></a>
+					<div class="dropdown-contentEspecial">
+						    <p>Especiales</p>
+					</div>
+			</li>
+			<li class="dropdownNavEspecial">
+				<a href="" class="iconEspecialNavTab"><i class="icon-share"></i></a>
+				<div class="dropdown-contentEspecialShare">
+					<a href=""><i class="icon-facebook"></i></a>
+					<a href=""><i class="icon-twitter"></i></a>
+				</div>
+			</li>
+		</ul>
+		<nav class="especial-site-navbar">
+	      <input type="checkbox" id="toggle_menu" class="especial-toggle-menu-checkbox" />
+	      <label for="toggle_menu" class="toggle-menu-label uppercase"></label>
+	      <input type="checkbox" id="toggle_overlay" class="toggle-overlay-checkbox" />
+	      <label for="toggle_menu" class="toggle-overlay-label uppercase"></label>
+	      <a href="http://www.semana.com" target="_blank"><img class="logo-img" src="https://static.iris.net.co/semana/img/logo-semana.svg"></a>
+	      <ul class="especial-site-menu">
+			        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com" target="_blank">Inicio</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/nacion/3-1" target="_blank">Nación</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/mundo/5-1" target="_blank">Mundo</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/opinion-online/81-1" target="_blank">Opinión</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/economia/4-1" target="_blank">Economía</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/educacion/64-1" target="_blank">Educación</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/vida-moderna/7-1" target="_blank">Vida Moderna</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/tecnologia/252-1" target="_blank">Tecnología</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/gente/8-1" target="_blank">Gente</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/cultura/6-1" target="_blank">Cultura</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/deportes/20-1" target="_blank">Deportes</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://www.semana.com/seccion/edicion-impresa/60" target="_blank">Edición Impresa</a>
+        </li>
+        <li class="especial-site-menu-item">
+            <a href="http://sostenibilidad.semana.com/" target="_blank">Sostenibilidad</a>
+        </li>
+		
+		
+			<div id="dropdownEspecialPlantilla" class="container-dropDown">
+			  <ul>
+			    <li class="dropdown">
+			    
+			      <input type="checkbox" />
+			      <a href="#" data-toggle="dropdown" class="titleDropdown">Compartir Especial</a>
+					
+			      <ul class="dropdown-menu">
+			        <li class="especial-site-menu-item"><a href="" rel="nofollow" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
+            		<li class="especial-site-menu-item"><a href="" rel="nofollow" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+			      </ul>
+			    </li>
+			    <li class="dropdown">
+			      <input type="checkbox" />
+			      <a href="#" data-toggle="dropdown" class="titleDropdown">Otros</a>
+					
+			      <ul class="dropdown-menu">
+			        <li class="especial-site-menu-item"><a target="_blank" href="https://store.semana.com/pagos/index.aspx?Id=1&amp;utm_source=semana.com&amp;utm_medium=referral&amp;utm_campaign=suscripcionescta" rel="nofollow">
+                        Suscripciones</a></li>
+                    <li class="especial-site-menu-item"><a target="_blank" href="http://www.semana.com/fotos">
+                        Imágenes</a> </li>
+                    <li class="especial-site-menu-item"><a target="_blank" href="http://www.semana.com/videos">
+                        Videos</a> </li>
+                    <li class="especial-site-menu-item"><a target="_blank" href="http://www.semana.com/especiales">
+	                   Especiales</a> </li>
+                    <li class="especial-site-menu-item"><a target="_blank" href="http://www.semana.com/contactenos&#10;      ">
+                        Contáctenos</a> </li>
+			      </ul>
+			    </li>
+			    <li class="dropdown">
+			      <input type="checkbox" />
+			      <a href="#" data-toggle="dropdown" class="titleDropdown">Redes Sociales</a>
+					
+			      <ul class="dropdown-menu">
+			        <li class="especial-site-menu-item">
+			            <a target="_blank" href="https://www.facebook.com/RevistaSemana" rel="nofollow"><i class="icon-facebook"></i> Facebook</a>
+			        </li>
+			        <li class="especial-site-menu-item">
+			            <a target="_blank" href="https://twitter.com/RevistaSemana" rel="nofollow"><i class="icon-twitter"></i> Twitter</a>
+			        </li>
+			        <li class="especial-site-menu-item">
+			            <a target="_blank" href="http://plus.google.com/+revistasemana" rel="publisher"><i class="icon-googleplus"></i> Google+</a>
+			        </li>
+			        <li class="especial-site-menu-item">
+			            <a target="_blank" href="http://www.youtube.com/RevistaSemana" rel="nofollow"><i class="icon-youtube"></i> YouTube</a>
+			        </li>
+			      </ul>
+			    </li>
+			  </ul>
+			</div> 
+	      </ul>
+		</nav>
+	</header>
+	<!-- Header Mobile -->
+	
+	<!-- fin header mobile-->
+	<!-- Contenido del especial-->
+	<div id="content">
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		
+	</div>
+		<footer>
+			<div class="footer-top">
+				<div class="row">
+					<div class="column-6">
+						<p class="footer-p">
+	                    Todos las marcas registradas son propiedad de la compañía respectiva o de PUBLICACIONES SEMANA S.A. Se prohíbe la reproducción total o parcial de cualquiera de los contenidos que aquí aparezca, así como su traducción a cualquier idioma sin autorización escrita de su titular.</p>
+	                    <p class="footer-p">
+	                    <a class="lightboxEspeciales footer-p related-link" href="#tYc-Especiales">TÉRMINOS DE USO</a>
+		                    / <a class="footer-p related-link" href="http://www.semana.com/contactenos" target="_blank">PAUTE CON NOSOTROS</a>
+		                    / <a class="lightboxEspeciales footer-p related-link" href="#habeasDataEspeciales"> HABEAS DATA </a> 
+		                    / <a target="_blank" href="http://www.semana.com/mapa" class="footer-p related-link">MAPA</a>
+	                	</p>
+	                	<h3 class="titleFooterEspecial"><a class="lightboxEspeciales footer-p related-link" href="#proyectosAliadosEspeciales">PROYECTOS ALIADOS</a></h3>
+	                	<p class="footer-p">COPYRIGHT © 2017 PUBLICACIONES SEMANA S.A.</p>
+					</div>
+					<div class="column-6 text-right">
+						<div class="column-6">
+							<h3 class="titleFooterEspecial">DISPONIBLE EN</h3>
+							<ul class="inlineEspecial">
+								<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.semana&amp;hl=es"><i class="icon-android"></i> Google Play</a></li>
+								<li><a target="_blank" href="https://itunes.apple.com/us/app/semana-com/id586693819?l=es&amp;mt=8"><i class="icon-apple"></i> App Store</a></li>
+							</ul>
+						</div>
+						<div class="column-6">
+							<div class="redes">
+								<h3 class="titleFooterEspecial">SÍGANOS EN</h3>
+								<ul class="inlineEspecial socialLinks">
+									<li><a target="_blank" href="https://www.facebook.com/RevistaSemana"><i class="icon-facebook"></i></a></li>
+									<li><a target="_blank" href="https://twitter.com/RevistaSemana"><i class="icon-twitter"></i></a></li>
+									<li><a target="_blank" href="https://plus.google.com/+revistasemana"><i class="icon-googleplus"></i></a></li>
+									<li><a target="_blank" href="https://www.youtube.com/RevistaSemana"><i class="icon-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="text-right">
+							<h3 class="titleFooterEspecial">NUESTRAS MARCAS</h3>
+							<ul class="blockGridEspeciales">
+								<li class="itemEspecial">
+		                        	<a href="http://www.semana.com" rel="nofollow" target="_blank"><img src="img/semana.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.dinero.com" rel="nofollow" target="_blank"><img src="img/dinero.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.soho.co" rel="nofollow" target="_blank"><img src="img/soho.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.fucsia.co/?utm_source=jetset.com.co" rel="nofollow" target="_blank"><img src="img/fucsia.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.revistaarcadia.com" rel="nofollow" target="_blank"><img src="img/arcadia.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://sostenibilidad.semana.com" rel="nofollow" target="_blank" class="sostenibilidadImg"><img src="img/sostenible.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.4patas.com.co" rel="nofollow" target="_blank"><img src="img/4patas.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial">
+			                        <a href="http://www.jetset.com.co" rel="nofollow" target="_blank"><img src="img/logo-jetset.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial rightEspecial">
+			                        <a href="http://www.finanzaspersonales.com.co" rel="nofollow" target="_blank"><img src="img/finanzas.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial rightEspecial">
+			                        <a href="http://www.zonavipsemana.com" rel="nofollow" target="_blank"><img src="img/zonaVip.svg"></a>
+			                    </li>
+			                    <li class="itemEspecial rightEspecial">
+			                        <a href="http://www.forossemana.com/" rel="nofollow" target="_blank" class="foros"><img src="img/foros_semana.png"></a>
+			                    </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+	<!-- fin contenido del especial-->
+	<!-- 	/////////////				Modal 		//////////			-->
+	<div class="especiales-lightbox-target" id="tYc-Especiales">
+	  <div class="boxTyC-Especiales">
+	   		<!-- 				tab 				-->
+	   		<main>
+  
+			  <input id="tab1" type="radio" name="tabs" checked>
+			  <label for="tab1">Políticas de uso</label>
+			    
+			  <input id="tab2" type="radio" name="tabs">
+			  <label for="tab2">Acuerdo de confidencialidad</label>
+			    
+			  <section id="content1" class="especialNav">
+			    <h2>Políticas de uso</h2>
+			    <h3>Términos y Condiciones de Uso del Portal</h3>
+			    <p>
+                    Estos términos y condiciones de uso del portal <a href="http://www.semana.com/"><u>Semana.com</u></a> (en adelante, el "Portal") regulan el uso que Usted puede dar como Visitante al contenido publicado en el Portal, así como la conducta que Usted puede desarrollar durante su visita y uso del Portal. Por el solo hecho de visitar el Portal, Usted acepta estos términos y condiciones y consiente en someterse a los mismos. Usted asume la responsabilidad por el uso que haga del Portal. Es su responsabilidad revisar y cumplir estos Términos y Condiciones de Uso periódicamente.
+                </p>
+                <ol>
+	                <li>
+	                    <h3>
+	                        1. Condiciones de acceso
+	                    </h3>
+	                    <p>
+	                        El acceso al Portal por parte de los Visitantes es libre y gratuito para personas
+	                        mayores de edad. En caso de ser Usted menor de edad, debe obtener con anterioridad
+	                        el consentimiento de sus padres, tutores o representantes legales, quienes serán
+	                        responsables de los actos que Usted lleve a cabo en contravención a estos términos
+	                        y condiciones de uso del Portal. Se da por entendido que los menores de edad que
+	                        accedan y usen el Portal cuentan con este consentimiento. El acceso al Portal permite
+	                        acceder a toda la información publicada por Publicaciones Semana S.A. (en adelante,
+	                        "SEMANA"), por los Ciberperiodistas y a algunos blogs destacados (en adelante, el
+	                        "Contenido"). El acceso a las funcionalidades de Comunidades requiere un registro
+	                        previo, en las condiciones que se describen en las Condiciones de Acceso y Uso de
+	                        las Comunidades.
+	                    </p>
+	                </li>
+                    <li>
+                        <h3>
+                            2. Condiciones de Uso del Contenido Público
+                        </h3>
+                        <p>
+                            El Contenido (que incluye o puede incluir textos, información, imágenes, fotografías,
+                            dibujos, logos, diseños, video, multimedia, software, aplicaciones, música, sonidos,
+                            entre otros, así como su selección y disposición), es propiedad exclusiva de SEMANA,
+                            sus anunciantes, o de terceros que hayan otorgado una licencia a SEMANA, con todos
+                            los derechos reservados. Como tal, dicho Contenido se encuentra protegido por las
+                            leyes y tratados internacionales vigentes en materia de Propiedad Intelectual. SEMANA
+                            confiere a Usted una licencia para visualizar el Contenido en el Portal, y para
+                            realizar una copia caché en su computador con dicho fin únicamente. Este documento
+                            puede ser impreso y almacenado por Usted.
+                            <br>
+                            <br>
+                            Aparte de lo anterior, SEMANA no confiere a los Visitantes ninguna licencia para
+                            descargar, reproducir, copiar, enmarcar, compilar, cargar o republicar en ningún
+                            sitio de Internet, Intranet o Extranet, adaptar, modificar, transmitir, vender ni
+                            comunicar al público, total o parcialmente, el Contenido. Cualquiera de estas actividades
+                            requiere de la autorización previa, expresa y por escrito de SEMANA, so pena de
+                            incurrir en violación a los derechos de propiedad industrial e intelectual, y someterse
+                            a las consecuencias civiles y penales de tal hecho, así como al derecho de SEMANA
+                            de revocar la licencia aquí conferida.
+                            <br>
+                            <br>
+                            Salvo que se indique expresamente lo contrario en el presente Contrato, nada de
+                            lo dispuesto en los presentes Términos y Condiciones de Uso del Portal deberá interpretarse
+                            en el sentido de otorgar una licencia sobre derechos de propiedad intelectual, ya
+                            sea por impedimento legal, implícitamente o de cualquier otra forma. Esta licencia
+                            podrá ser revocada en cualquier momento y sin preaviso, con o sin causa.
+                            <br>
+                            <br>
+                            Usted se compromete a hacer un uso adecuado del Contenido. De manera enunciativa
+                            pero no limitativa, Usted se compromete a no:
+                        </p>
+                        <ul type="square">
+                            <li>
+                                <p>
+                                    &#8226; Utilizar el Contenido para incurrir y/o incitar a terceros a incurrir en actividades
+                                    ilícitas, ilegales o contrarias a la buena fe y al orden público, o para difundir
+                                    contenidos o propaganda de carácter racista, xenófobo, pornográfico-ilegal, de apología
+                                    del terrorismo o atentatorio contra los derechos humanos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Usar secuencias de comandos automatizadas para recopilar información publicada en
+                                    el Portal o a través del Portal o para interactuar de cualquier otro modo con los
+                                    mismos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Provocar daños en los sistemas físicos y lógicos de SEMANA, de sus proveedores o
+                                    de terceras personas, introducir o difundir en la red virus informáticos, troyanos,
+                                    código malicioso o cualesquiera otros sistemas físicos o lógicos que sean susceptibles
+                                    de provocar daños en y/o estén diseñados para interrumpir, destruir o limitar la
+                                    funcionalidad de cualquier software, hardware o equipo de telecomunicaciones o para
+                                    dañar, deshabilitar, sobrecargar o perjudicar el Portal de cualquier modo.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Intentar acceder, recolectar o almacenar los datos personales de otros Visitantes
+                                    y/o Usuarios del Portal y, en su caso, utilizar las cuentas de correo electrónico
+                                    de otros Visitantes y/o Usuarios y modificar o manipular sus mensajes.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            3. Cookies
+                        </h3>
+                        <p>
+                            Este portal hace uso de cookies propias y de terceros. Tenga en cuenta que el uso de la cookies va a permitir optimizar su experiencia en este portal.
+                        </p>
+                        <h6>¿Qué son las cookies?</h6>
+                        <p>Una cookie es un fichero que se descarga en el ordenador/smartphone/tablet del usuario al acceder a determinadas páginas web.</p>
+                        <h6>Finalidades de las cookies</h6>
+                        <p>PROYECTOS SEMANA S.A. y/o PUBLICACIONES SEMANA S.A. harán uso de las cookies para:</p>
+                        <p>
+                            - determinar sus preferencias de navegación <br>
+                            - para efectos promocionales, comerciales y publicitarios <br>
+                            - para efectos estadísticos, entre otros fines.
+                        </p>
+                        <h6>Aceptación de uso de Cookies</h6>
+                        <p>Al aceptar estos “Términos y condiciones”, Usted acepta que PUBLICACIONES SEMANA S.A. y/o PROYECTOS SEMANA S.A. utilicen cookies para los fines aquí señalados. </p>
+                        <p>El uso continuo de esta página web se entenderá como aceptación de los “Términos y Condiciones” y como consecuencia, del uso de las cookies. </p>
+                        <h6>Configuración de Cookies</h6>
+                        <p>Usted podrá configurar su navegador para que notifique y rechace la instalación de las cookies enviadas por el Portal, sin que ello impida su acceso a los Contenidos. Sin embargo, tenga en cuenta que al desactivar el uso de cookies usted podrá experimentar una disminución en la calidad de funcionamiento de la página web.</p>
+                    </li>
+                    <li>
+                        <h3>
+                            4. Procedimiento de notificación de Contenido Violatorio
+                        </h3>
+                        <p>
+                            SEMANA respeta y promueve la protección de los derechos de propiedad intelectual
+                            de terceros. No obstante, en ocasiones SEMANA publicará de manera inadvertida y
+                            sin mala fe de su parte, contenido cuyos derechos pertenezcan a terceros. Para ello,
+                            SEMANA ha establecido el siguiente procedimiento de notificación de contenido violatorio
+                            de derechos de terceros.<br>
+                            <br>
+                            En caso que Usted encuentre en el Portal contenido que considere violatorio de sus
+                            derechos, le solicitamos enviar una comunicación escrita a nuestro Agente Designado,
+                            utilizando el <a href="/Contactenos"><u>formato</u></a> establecido para ello ,
+                            o por fax, email o correo escrito a nuestro Agente Designado, así:
+                        </p>
+                        <ul type="square">
+                            <li>
+                                <hp>&#8226; Revista Dinero
+                                    <p></hp></li>
+                            <li>
+                                <p>
+                                    &#8226; Dependencia: Servicio al cliente
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Email: servicioalcliente@semana.com
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Por favor, incluya en la comunicación la siguiente información:<br>
+                        </p>
+                        <ul type="square">
+                            <li>
+                                <p>
+                                    &#8226; La página o URL en la que aparece el contenido considerado violatorio.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Una descripción clara y detallada del contenido considerado violatorio. En caso
+                                    que en la página o URL existan varias obras, esta descripción debe ser suficiente
+                                    para identificar cuál de todas es la obra que está violando sus derechos.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                   &#8226; Una explicación de en qué manera el contenido en mención atenta contra sus derechos.
+                                    En caso de contar con documentos que demuestren la titularidad de sus derechos,
+                                    le rogamos anexar una copia.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Una declaración bajo la gravedad del juramento, de que la información enviada en
+                                    su comunicación es correcta.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Sus datos de contacto, tales como nombre, identificación, dirección de correspondencia
+                                    escrita y electrónica, teléfono, celular, etc.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Por favor tenga en cuenta que en caso que la información enviada en su comunicación
+                            sea incorrecta, SEMANA no asume responsabilidad por las consecuencias de su retiro.
+                            En consecuencia, Usted debe ser consciente de que al enviar su comunicación asume
+                            los daños y perjuicios que pueda ocasionar a terceros de buena fe.
+                            <br>
+                            <br>
+                            SEMANA revisará el caso, y si encuentra mérito en su queja, procederá a retirar
+                            el material. En caso que la información haya sido publicada por un ciberperiodista
+                            o esté contenida en un blog destacado, o en cualquier otro mecanismo que permita
+                            a los Usuarios o Visitantes publicar información en el Portal como Contenido de
+                            acceso al público, SEMANA transmitirá la queja al Ciberperiodista, Visitante o Usuario
+                            que haya publicado el contenido considerado violatorio, quien tendrá un plazo de
+                            quince (15) días corrientes para responder a la queja. Para ello, el Ciberperiodista,
+                            Visitante o Usuario deberá enviar una comunicación a SEMANA con la siguiente información:
+                        </p>
+                        <ul type="square">
+                            <li>
+                                <p>
+                                    &#8226; Una explicación de por qué razón el contenido no era violatorio de los derechos
+                                    alegados. En caso de contar con documentos que lo demuestren, deberá anexar una
+                                    copia.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Una declaración bajo la gravedad del juramento, de que la información enviada en
+                                    su comunicación es correcta.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Sus datos de contacto, tales como nombre, identificación, dirección de correspondencia
+                                    escrita y electrónica, teléfono, celular, etc.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Tras la respuesta del Ciberperiodista, Visitante o Usuario, SEMANA analizará el
+                            caso y decidirá si mantiene el bloqueo del contenido, o si lo publica de nuevo.
+                            <br>
+                        </p>
+                        <p>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            5. Limitación de Responsabilidad
+                        </h3>
+                        <p>
+                            SEMANA no es responsable por:
+                        </p>
+                        <ul type="square">
+                            <li>
+                                <p>
+                                    &#8226; Las caídas del Portal y la falla en el suministro del servicio, quedando exonerada
+                                    por cualquier tipo de daños y perjuicios causados debido a la no disponibilidad
+                                    y/o interrupción del servicio ocasionados por fallas o no disponibilidad de las
+                                    redes y servicios de telecomunicaciones utilizados para soportar el Portal, y que
+                                    sean ajenos a su voluntad.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Los daños y perjuicios causados por virus informáticos, troyanos, código malicioso
+                                    o cualesquiera otros sistemas físicos o lógicos a los sistemas de los Usuarios.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Errores mecanográficos y/o tipográficos que aparezcan en el Contenido.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; El contenido publicitario que aparezca en el Portal, el cual es responsabilidad
+                                    del anunciante respectivo. Cualquier reclamación por infracción a la propiedad industrial
+                                    y de derechos de autor deberá ser dirigida directamente al Anunciante. Cualquier
+                                    promoción, incluida la entrega y el pago por bienes y servicios, y cualquier otro
+                                    término, condición, garantía o representación asociados con dichos tratos o promociones,
+                                    corresponden a una relación exclusiva entre el anunciante y el Usuario, sin participación
+                                    de SEMANA.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; Las opiniones publicadas por los Usuarios a través de los blogs y otros servicios
+                                    que ofrezca SEMANA al público.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    &#8226; El contenido de los sitios vinculados mediante hipervínculos que aparezcan en el
+                                    Portal (los "Sitios Vinculados"), incluyendo sin limitación, cualquier vínculo contenido
+                                    en los Sitios Vinculados, cualquier cambio o actualización a los Sitios Vinculados,
+                                    cualquier tipo de transmisión recibida o enviada desde o hacia Sitios Vinculados,
+                                    o el funcionamiento incorrecto de los Sitios Vinculados. SEMANA proporciona estos
+                                    Sitios Vinculados sólo por comodidad, y la inclusión de cualquiera de ellos no implica
+                                    aprobación por parte de SEMANA a ninguno de estos sitios ni ninguna asociación con
+                                    sus operadores.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            6. Miscelánea
+                        </h3>
+                		<ul type="square">
+		                    <li>
+			                    <p>
+			                        &#8226; Modificación de los Términos Legales
+			                        <br>
+			                        SEMANA podrá modificar estos Términos y Condiciones de Uso del Portal en cualquier
+			                        momento y sin previo aviso, tan pronto se publique una nueva versión en el Portal.
+			                        SEMANA publicará en todo caso la fecha en que la versión vigente de los Términos
+			                        y Condiciones fue publicada, para fines informativos de los Usuarios.
+			                    </p>
+		                	</li>
+		                	<li>
+		                    	<p>
+		                        &#8226; Legislación aplicable.
+		                        <br>
+		                        Los presentes Términos Legales se regirán e interpretarán de acuerdo con las leyes
+		                        de la República de Colombia.
+		                        </p>
+		                	</li>
+	                	</ul>
+           			 </li>
+                </ol>
+			  </section>
+			    
+			  <section id="content2" class="especialNav">
+			    <h2>Términos y condiciones</h2>
+			    <hr>
+			    <p>En cumplimiento de la ley de protección de Datos Personales, por medio del presente documento solicitamos su autorización para que Publicaciones Semana S.A. y Proyectos Semana S.A. recolecte, almacene y use sus datos personales registrados en el presente formulario, en su base de datos, única y exclusivamente para los siguientes fines:</p>
+                <ol>
+                    <li>
+                        <p>1. Garantizar un óptimo servicio.</p>
+
+                    </li>
+                    <li>
+                        <p>2. Contactarlo por cualquier medio, ya sea correo electrónico, teléfono fijo, celular, o en la dirección registrada</p>
+                    </li>
+                    <li>
+                        <p>3. Facilitar la correcta ejecución de las compras y prestación de los servicios contratados;</p>
+                    </li>
+                    <li>
+                        <p>4. Realizar estudios estadísticos que permitan diseñar mejoras en los servicios prestados;</p>
+                    </li>
+                    <li>
+                        <p>5. Gestionar tareas básicas de administración;</p>
+                    </li>
+                    <li>
+                        <p>6. Informar por cualquier medio, las promociones, novedades, productos y servicios relacionados con los eventos y productos editoriales editados y/o comercializados por Publicaciones Semana S.A. y Proyectos Semana S.A., productos y servicios promovidos directamente por los Aliados estratégicos de Publicaciones Semana S.A. y Proyectos Semana S.A., que generen valores agregados para usted. </p>
+                    </li>
+                </ol>
+                <p> De la misma forma, por medio del presente documento solicitamos su autorización para que Publicaciones Semana S.A. y Proyectos Semana S.A. comparta sus datos con terceros.<br><br> Recuerde que con la presente autorización usted tiene derecho a:</p>
+                <ol>
+                    <li>
+                        <p>1. Conocer, actualizar y solicitar la rectificación en cualquier tiempo de sus datos personales.</p>
+                    </li>
+                    <li>
+                        <p>2. Solicitar prueba del otorgamiento de la presente autorización</p>
+                    </li>
+                    <li>
+                        <p>3. Saber del uso que Publicaciones Semana S.A. y Proyectos Semana S.A. ha hecho de sus datos personales;
+                        </p>
+                    </li>
+                    <li>
+                        <p>4. Revocar la presente autorización en caso de incumplimiento de los derechos anteriormente enunciados;
+                        </p>
+                    </li>
+                    <li>
+                        <p>5. Acceder sin costo alguno a sus datos personales previamente autorizados a través de la línea de ATENCION AL CLIENTE: 01 8000 511100 o en Bogotá al 6073000, e-mail servicioalcliente@semana.com , o acudir directamente a la sede de Publicaciones Semana S.A. y Proyectos Semana S.A. en la Carrera 11 # 77 A 65 en Bogotá D.C.
+                        </p>
+                    </li>
+                </ol>
+                <p>
+                    Sus datos personales se almacenarán de manera segura, habiendo tomado todas las medidas de precaución para proteger su información contra adulteraciones, pérdidas, consultas, uso o acceso no autorizado o fraudulento. Esto con el objetivo de que su información esté protegida. Sus datos serán tratados de acuerdo al Manual de Políticas y Procedimientos para la protección de datos personales de Publicaciones Semana y Proyectos Semana S.A.
+                    <br><br>
+                    Por medio de la presente aceptación, Usted declara expresamente que la finalidad de la utilización por Publicaciones Semana S.A. y Proyectos Semana S.A. de sus datos personales, le ha sido plenamente informada y autoriza de modo expreso que sus datos sean compartidos con terceros, debidamente autorizados por Publicaciones Semana S.A. y/o Proyectos Semana S.A., y entregados conforme a las disposiciones de la ley.<br><br>
+                    Si Usted no está de acuerdo con el contenido de este aviso legal, le solicitamos expresar claramente que no está dispuesto a proporcionar los datos personales requeridos, o abstenerse de registrar sus datos personales en los formatos que le han sido suministrados.
+                    <br>
+                </p>
+			  </section>
+			</main>
+	   		<!-- 				end tab 			-->
+	  </div>
+	   <a class="especiales-lightbox-close" href="#"></a>
+	</div>
+
+	<!-- 	/////////////				Fin modal 		/////////		-->
+	<!-- 	///////			Habeas Data 	///////////////  -->
+	<div class="especiales-lightbox-target" id="habeasDataEspeciales">
+	  <div class="boxTyC-Especiales">
+	  	<div class="especialNav habeasDataEspecialLightbox">
+	   		<h2>MANUAL DE POLÍTICAS Y PROCEDIMIENTOS PARA LA PROTECCIÓN DE DATOS PERSONALES DE PUBLICACIONES SEMANA S.A. Y PROYECTOS SEMANA S.A. (EN ADELANTE, SEMANA)</h2>
+	   		<p>
+                El presente manual tiene por objeto el cumplimiento de las disposiciones legales, constitucionales y jurisprudenciales concernientes al desarrollo del derecho constitucional que tienen todas las personas a conocer, actualizar y rectificar la información que se haya recogido sobre ellas en bases de datos o archivos relativos al artículo 15 de la Constitución Política, así como el derecho a la información consagrado en el artículo 20 de la misma.
+            </p>
+            <p>
+                En resumen, el presente manual establece las políticas y los procedimientos a través de los cuales el titular de los datos personales puede hacer efectivos sus derechos relacionados con el tratamiento de sus datos y a su vez, el tratamiento que el responsable debe darle a los datos de terceros, así como los mecanismos para instar el cumplimiento de los deberes en cabeza del responsable del tratamiento. Así mismo, se dan algunas definiciones relativas a términos necesarios para la correcta aplicación de las mencionadas políticas, junto con los principios sobre los que se fundamenta la recolección y tratamiento de los datos personales
+            </p>
+            <p>
+               Es de aclarar este manual no aplicará ni servirá de referencia para solicitudes de eliminación de bases de datos de archivos de información periodística y otros contenidos editoriales, lo anterior, en virtud del artículo segundo (2°) de la Ley 1581 de 2012 que dispuso lo siguiente: 
+            </p>
+            <p>
+                <i>“El régimen de protección de datos personales que se establece en la presente ley no será de aplicación (…) d) A las bases de datos y archivos de información periodística y otros contenidos editoriales (…)”.</i>
+            </p>
+            <p>
+                Como puede apreciarse, ésta exclusión da un tratamiento especial a la información periodística y de contenidos editoriales de los medios de comunicación en relación con sus datos noticiosos. Así mismo la jurisprudencia interpretó los alcances de los contenidos sujetos al Habeas Data, la Corte Constitucional en sentencia C-748 de 2011 de control de constitucionalidad del proyecto de ley estatutaria 1581 de 2012 se pronunció al punto de la excepción mencionada en los siguientes términos:
+            </p>
+            <p>
+                (…)
+            </p>
+            <p>
+                <strong><i>“Constitucionalidad del literal d): la excepción de “datos y archivos de información periodística y otros contenidos editoriales”</i></strong>
+            </p>
+            <p>
+                <i>“Esta restricción es necesaria en la medida en que a través de ella se está asegurando el respeto a la libertad de prensa. La jurisprudencia ha sido enfática en señalar que el “ámbito de protección de la libertad de expresión en sentido genérico consagrada en el artículo 20 Superior, es la libertad de prensa, que se refiere no solo a los medios impresos sino a todos los medios masivos de comunicación.”.</i>
+            </p>
+	  		<hr>
+            <h2><strong>OBJETO</strong></h2>
+            <p>
+                Reglamentar las políticas y procedimientos que serán aplicables en el manejo de información de datos personales por parte de SEMANA, según las disposiciones contenidas en la Ley 1581 de 2012 y el decreto 1377 de 2013.
+            </p>
+            <h2><strong>RESPONSABLES DEL TRATAMIENTO</strong></h2>
+            <p>
+                Razón social: Publicaciones Semana S.A. y Proyectos Semana S.A. en adelante SEMANA.<br>
+                Oficina principal: Calle 78 No. 11 - 17<br>
+                Teléfonos: 6468400<br>
+                Página web principal: <a href="http://www.semana.com/" target="_blank">www.semana.com</a><br>
+                Email: <a href="mailto:correo@semana.com">servicioalcliente@semana.com</a><br>
+                Responsable: Adriana Alarcon – Jefe de Departamento SAC.
+            </p>
+            <h2><strong>ALCANCE</strong></h2>
+            <p>
+                El presente manual le es aplicable a los datos personales de personas naturales registrados en las bases de datos relativas a Empleados, Potenciales Empleados, Trabajadores Retirados, Accionistas, Proveedores, Potenciales Proveedores, Clientes y Usuarios (en lo pertinente) de SEMANA, los cuales sean susceptibles de tratamiento. Aplicará a los datos personales que sean objeto de recolección y manejo por parte de SEMANA. Si a futuro, otras personas jurídicas entran a formar parte de SEMANA, el manual aplicará a aquellas.
+            </p>
+            <p>
+                El presente manual no aplicará a:
+                </p>
+                <ol type="1">
+                    <li>1. A los datos de uso exclusivamente personal o doméstico.</li>
+                    <li>2. A los datos que tengan por finalidad la seguridad y defensa nacional, así como la prevención, detección, monitoreo y control del lavado de activos y el financiamiento del terrorismo.</li>
+                    <li>3. A los datos que contengan información de inteligencia y contrainteligencia del Estado.</li>
+                    <li>4. A los datos de información periodística y otros contenidos editoriales.</li>
+                    <li>5. A las bases de datos y archivos regulados por la Ley Estatutaria 1266 de 2008.</li>
+                    <li>6. A las bases de datos y archivos regulados por la Ley 79 de 1993.</li> 
+                </ol>
+            <h2><strong>DEFINICIONES</strong></h2>
+            <p>
+                Para la aplicación de las reglas y procedimientos establecidos en el presente manual, y de acuerdo a lo establecido en el artículo 3 de la Ley Estatutaria 1581 de 2012, se entenderá por:
+
+                </p><ol type="1">
+                    <li>1. <strong>Autorización:</strong> Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales.</li>
+                    <li>2. <strong>Base de Datos:</strong> Conjunto organizado de datos personales que sea objeto de Tratamiento.</li>
+                    <li>3. <strong>Aviso de privacidad:</strong> Documento físico, electrónico o en cualquier otro formato, generado por el responsable del Tratamiento que se pone a disposición del Titular para el Tratamiento de sus datos personales. A través de este, se comunica al Titular de la información la existencia de las políticas aplicables para el tratamiento de sus datos personales, junto con la forma como acceder a las mismas y las características del tratamiento de los datos personales.</li>
+                    <li>4. <strong>Dato personal:</strong> Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables, tales como nombre y apellidos, documento de identidad, edad, domicilio, región, país, ciudad, código postal, número de teléfono fijo, número de teléfono móvil, dirección, dirección de correo electrónico, preferencias publicitarias, preferencia de consumo, preferencias de canales, quejas y reclamos, novedades de servicio, datos básicos y personales, datos de contacto, datos demográficos, datos de gustos, preferencias y hábitos.</li>
+                    <li>5. <strong>Datos sensibles:</strong> Se entiende por datos sensibles aquellos que afectan la intimidad de Titular o cuyo uso indebido puede generar su discriminación, tales como aquellos revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promuevan intereses de cualquier partido político o que garanticen los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual y los datos biométricos.</li>
+                    <li>6. <strong>Encargado del Tratamiento:</strong> Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento.</li>
+                    <li>7. <strong>Responsable del Tratamiento:</strong>  Persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos.</li>
+                    <li>8. <strong>Titular:</strong> Persona natural cuyos datos personales sean objeto de Tratamiento.</li>
+                    <li>9. <strong>Tratamiento:</strong> Cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión de datos, en cualquier tecnología conocida o por conocer.</li>
+                </ol>
+            <h2><strong>PRINCIPIOS</strong></h2>
+            <p>Los principios que a continuación se enuncian, constituyen los parámetros generales mediante los cuales se dará aplicación a lo establecido en el presente manual referente a los datos personales de las personas a las que le es aplicable el tratamiento de sus datos:
+                </p><ol type="a">
+                    <li>1. <strong>Principio de finalidad:</strong> El Tratamiento de datos personales por parte de SEMANA debe obedecer a una finalidad legítima, la cual debe ser informada al Titular.</li>
+                    <li>2. <strong>Principio de libertad:</strong> El Tratamiento de datos personales sólo podrá ejercerse mediando con el consentimiento, previo, expreso e informado del Titular de la información. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de mandato legal o judicial que releve el consentimiento.</li>
+                    <li>3. <strong>Principio de veracidad o calidad:</strong> La información sujeta a Tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el Tratamiento de datos parciales, incompletos, fraccionados o que induzcan a error.</li>
+                    <li>4. <strong>Principio de transparencia:</strong> En el Tratamiento debe garantizarse el derecho del Titular a obtener de SEMANA, en cualquier momento y sin restricciones, información acerca de la existencia de datos que le conciernan.</li>
+                    <li>5. <strong>Principio de acceso y circulación restringida:</strong> Los datos personales, salvo la información pública, no podrán estar disponibles en Internet u otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los Titulares o terceros autorizados.</li>
+                    <li>6. <strong>Principio de seguridad:</strong> La información sujeta a Tratamiento por SEMANA, se deberá manejar con las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.</li>
+                    <li>7. <strong>Principio de confidencialidad:</strong> Todas las personas que intervengan en el Tratamiento de datos personales que no tengan la naturaleza de públicos están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que comprende el Tratamiento.</li>
+                </ol>
+            <h2><strong>CONTENIDO</strong></h2>
+            <h4><strong>Tratamiento a que serán sometidos los datos y finalidad del tratamiento.</strong></h4>
+            <p>
+                El tratamiento es cualquier operación o conjunto de operaciones sobre datos personales, tales como la recolección, almacenamiento, uso, circulación o supresión. La información que recolecta SEMANA en la prestación de sus servicios y en general en el desarrollo de su objeto social, es utilizada principalmente para identificar, mantener un registro y control de los Empleados, Potenciales Empleados, Trabajadores Retirados, Accionistas, Proveedores, Potenciales Proveedores, Clientes y Usuarios de SEMANA.
+            </p>
+            <h4><strong>Tratamientos Generales de la información:</strong></h4>
+            <ul>
+                <li>• Procesar.</li>
+                <li>• Confirmar.</li>
+                <li>• Cumplir.</li>
+                <li>• Proveer los servicios y/o productos adquiridos directamente o con la participación de terceros.</li>
+                <li>• Promocionar y publicitar nuestras actividades, productos y servicios.</li>
+                <li>• Realizar transacciones.</li>
+                <li>• Efectuar reportes con las distintas autoridades administrativas de control y vigilancia nacional, policiva o autoridades judiciales, entidades financieras y/o compañías de seguros.</li>
+                <li>• Fines administrativos internos y/o comerciales tales como: investigación de mercados, auditorias, reportes contables, análisis estadísticos o facturación.</li>
+                <li>• Recolección.</li>
+                <li>• Almacenamiento.</li>
+                <li>• Grabación.</li>
+                <li>• Uso.</li>
+                <li>• Circulación.</li>
+                <li>• Procesamiento.</li>
+                <li>• Supresión.</li>
+                <li>• Transmisión y/o transferencia a terceros países de los datos suministrados, para la ejecución de las actividades relacionadas con los servicios y productos adquiridos.</li>
+                <li>• Registros contables.</li>
+                <li>• Correspondencia.</li>
+                <li>• Identificación de fraudes y prevención de lavado de activos y de otras actividades delictivas.</li>
+            </ul>
+            <h4><strong>Tratamiento General de Información de los accionistas:</strong></h4>
+            <ul>
+                <li>• Efectuar el pago de dividendos.</li>
+                <li>• Cumplimiento de decisiones judiciales y disposiciones administrativas y legales.</li>
+                <li>• Contactos.</li>
+                <li>• Cumplimiento de decisiones judiciales y disposiciones administrativas y legales, fiscales y regulatorias.</li>
+            </ul>
+            <h4><strong>Tratamiento General de Información de los proveedores:</strong></h4>
+            <ul>
+                <li>• Para fines comerciales.</li>
+                <li>• Contabilización.</li>
+                <li>• Cumplimiento de decisiones judiciales y disposiciones administrativas y legales, fiscales y regulatorias.</li>
+                <li>• Cumplimiento de obligaciones contractuales, por lo cual la información podrá ser transferida a terceros, tales como entidades financieras, notarías, listas OFAC y de terrorismo, abogados, etc.</li>
+                <li>• Para realizar los procesos en que se encuentran vinculados los proveedores.</li>
+                <li>• Cualquier otro uso que el proveedor autorice por escrito para el uso de su información.</li>
+                <li>• Transmisión de información y datos personales en procesos de auditorías.</li>
+            </ul>
+            <h4><strong>Tratamiento General de Información de los clientes:</strong></h4>
+            <ul>
+                <li>• Para fines comerciales.</li>
+                <li>• Ofrecimiento de bienes y servicios.</li>
+                <li>• Publicidad y mercadeo.</li>
+                <li>• Alianzas comerciales.</li>
+                <li>• Contabilización.</li>
+                <li>• Cumplimiento de obligaciones contractuales, por lo cual la información podrá ser transferida a terceros, tales como entidades financieras, notarías, listas OFAC y de terrorismo, abogados, etc.</li>
+                <li>• Cumplimiento de decisiones judiciales y disposiciones administrativas y legales, fiscales y regulatorias.</li>
+                <li>• Transmisión de información y datos personales en procesos de auditorías.</li>
+                <li>• Facturación.</li>
+            </ul>
+            <h4><strong>Tratamiento General de Información de los empleados, trabajadores retirados, pensionados y candidatos a ocupar vacantes:</strong></h4>
+            <ul>
+                <li>• Para fines pertinentes a la relación laboral (EPS, ARL, fondos de pensiones y cesantías, cajas de compensación familiar, etc.)</li>
+                <li>• En el caso de los empleados con la suscripción del contrato laboral se entiende autorización expresa para darle Tratamiento a la información.</li>
+                <li>• En el caso de requerimientos judiciales y legales.</li>
+                <li>• Contabilización y pago de nómina.</li>
+                <li>• Reclutar y seleccionar personal que ocuparán las vacantes.</li>
+                <li>• Procesar, confirmar y cumplir con las obligaciones laborales legales y extralegales derivadas del contrato laboral.</li>
+                <li>• Realizar transacciones.</li>
+                <li>• Pago de beneficios extralegales.</li>
+                <li>• Auditorias.</li>
+                <li>• Análisis estadísticos.</li>
+                <li>• Mantener base de datos de candidatos.</li>
+                <li>• Capacitación y formación.</li>
+                <li>• Compartir los datos personales con entidades bancarias, empresas que ofrezcan beneficios a nuestros trabajadores activos, entre otros.</li>
+            </ul>
+            <h4><strong>Autorización.</strong></h4>
+            <p>
+                La compilación, almacenamiento, consulta, uso, intercambio, transmisión, transferencia y tratamiento de datos personales requiere el consentimiento libre, expreso e informado del Titular de la información. Basado en lo anterior y a través de este manual, se implementa los mecanismos que permitan la consulta posterior por parte del titular de la información.
+            </p>
+            <h4><strong>Mecanismos para otorgar Autorización</strong></h4>
+            <p>
+                La autorización por parte del titular podrá constar en un documento físico, electrónico o cualquier otro formato que permita concluir de forma razonable que el Titular otorgó la autorización.
+            </p>
+            <p>
+                Teniendo en cuenta lo anterior, SEMANA deja de presente que la autorización en todo caso será mediante documento físico y/o digital, el cual deberá contar con la firma del Titular de la información, lo cual no obsta que más adelante se establezcan mecanismos diferentes para otorgar la autorización.
+
+            </p>
+            <p>
+                A través de la autorización se pondrá en conocimiento del Titular de la información o de su representante en el caso de infantes (niños y niñas) y adolescentes, el hecho que la información será recolectada, incluyendo la finalidad, las modificaciones, almacenamiento y el uso especifico que se dará a los mismos, y además:
+                </p><ol type="1">
+                    <li>1. La persona quien recopila la información (especificando si es el Responsable o el Encargado del tratamiento).</li>
+                    <li>2. Los datos que serán recopilados, incluyendo si se recopilan Datos Sensibles.</li>
+                    <li>3. La finalidad del tratamiento de los datos.</li>
+                    <li>4. Los mecanismos a través de los cuales pueden ejercer sus derechos como Titulares de la información (acceso, corrección, actualización o supresión de los datos).</li>
+                </ol>
+            <p></p>
+            <h4><strong>Prueba de la Autorización.</strong></h4>
+            <p>
+                SEMANA en su calidad de Responsable y de Encargado del Tratamiento dispondrá de los medios necesarios para mantener los registros técnicos y tecnológicos de cuándo y cómo se obtuvo la autorización por parte del Titular de la información para el tratamiento de los mismos.
+            </p>
+            <h4><strong>Aviso de privacidad.</strong></h4>
+            <p>
+                El aviso de privacidad es un documento físico, electrónico o cualquier otro formato, mediante el cual se informa al titular de la información sobre la existencia de políticas que le serán aplicables, así como la forma en la que pueden acceder a las mismas y las características del tratamiento que se le dará a los datos personales.
+            </p>
+            <h4><strong>Contenido del aviso de privacidad.</strong></h4>
+            <ol type="1">
+                <li>1. La identidad, domicilio y datos de contacto del Responsable o del Encargado del Tratamiento.</li>
+                <li>2. El Tratamiento al que serán sometidos los datos y la finalidad del mismo.</li>
+                <li>3. Los mecanismos dispuestos SEMANA para que el Titular conozca la política de tratamiento de la información y los cambios sustanciales que se produzcan en ella o en el aviso de privacidad correspondiente. En todos los casos, debe informar al Titular cómo acceder o consultar la política de tratamiento de información.</li>
+            </ol>
+            <p>
+                Se conservará el modelo del aviso de privacidad que se transmitió a los Titulares de la información mientras se lleve a cabo el tratamiento de los datos personales y perduren las obligaciones que de éste se deriven. Para el almacenamiento del modelo, se podrán emplear medios informáticos, electrónicos o cualquier otra tecnología a elección de SEMANA.
+            </p>
+            <p>
+                Según el grupo de personas cuyos datos personales se recaban, habrá un único modelo de aviso de privacidad, en el cual se especificará detalladamente los puntos anteriormente descritos para cada uno de los mismos.
+            </p>
+            <h4><strong>Derechos de los Titulares de la información.</strong></h4>
+            <p>
+                De conformidad con el artículo 8 de la Ley Estatutaria 1581 de 2012, el Titular de los datos personales tiene los siguientes derechos:
+                </p><ol type="1">
+                    <li>1. Conocer, actualizar y rectificar sus datos personales SEMANA en su calidad de Responsable y Encargado del tratamiento.</li>
+                    <li>2. Solicitar prueba de la autorización otorgada a SEMANA.</li>
+                    <li>3. Ser informado por SEMANA respecto del uso que le ha dado a sus datos personales.</li>
+                    <li>4. Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la Ley Estatutaria 1581 de 2012, habiéndose agotado el trámite de consulta o reclamo según lo indicado en la mencionada Ley.</li>
+                    <li>5. Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales.</li>
+                    <li>6. Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento.</li>
+                </ol>
+            <h4><strong>Deberes de SEMANA con relación al tratamiento de datos personales en su calidad de Responsables y Encargado del Tratamiento.</strong></h4>
+            <p>
+                Se deja de presente que los datos personales objeto del tratamiento son de propiedad de las personas a las que se refieren y ellas son las facultadas para disponer los mismos. Basado en lo anterior, solo hará uso de los datos personales conforme a las finalidades establecidas en la Ley y respetando lo establecido en la Ley Estatutaria 1581 de 2012.
+            </p>
+            <p>
+                De conformidad con el artículo 17 de la Ley Estatutaria 1581 de 2012, se comprometen a cumplir los siguientes deberes:
+                </p><ol type="1">
+                    <li>1. Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data.
+</li>
+                    <li>2. Solicitar y conservar copia de la respectiva autorización otorgada por el Titular.</li>
+                    <li>3. Realizar en los términos previstos en los artículos 14 y 15 de la Ley Estatutaria 1581 de 2012, la actualización, rectificación o supresión de los datos.</li>
+                    <li>4. Tramitar las consultas y reclamos formulados por los titulares en los términos señalados en el artículo 14 de la Ley Estatutaria 1581 de 2012.
+</li>
+                    <li>5. Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.</li>
+                    <li>6. Insertar en las bases de datos la leyenda “información en discusión judicial” una vez notificada por parte de la autoridad competente sobre procesos judiciales relacionados con la calidad o detalles del dato personal.</li>
+                    <li>7. Informar a la Superintendencia de Industria y Comercio cuando se presenten violaciones a los códigos de seguridad y existan riesgos en la administración de la información de los titulares.</li>
+                    <li>8. Tramitar las consultas y reclamos formulados por los titulares de la información.</li>
+                    <li>9. Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.</li>
+                    <li>10. Aplicar las normas que reglamenten la Ley Estatutaria 1581 de 2012.</li>
+                </ol>
+            <h4><strong>Deberes respecto del Tratamiento de datos de Infantes y Adolescentes.</strong></h4>
+            <p>
+                SEMANA en su calidad de Responsable y Encargado de Tratamiento de los datos personales de los mencionados grupos deberán tener especial cuidado en asegurar el cumplimiento de la Ley respecto a estos grupos y el respeto de los derechos de los mismos, en especial respecto a datos personales que no encuadren en la categoría de datos de naturaleza pública (nombre, sexo, fecha de nacimiento, etc.).
+            </p>
+            <h4><strong>Procedimientos para acceso, consulta y reclamación.</strong></h4>
+            <p>
+                Puntos aplicables para todos los Procedimientos:
+            </p>
+            <p>
+                <strong>(i)</strong> Para el ejercicio de los derechos indicados en este punto por parte de los causahabientes, y también para evitar acceso a la información por personas no autorizadas legalmente, se deberá verificar previamente y de acuerdo con la Ley, la documentación que permita concluir que la persona que solicita la información sí es un causahabiente del Titular.
+            </p>
+            <p>
+                <strong>(ii)</strong> En caso de existir alguna duda en cuanto a la aplicación de los procedimientos acá indicados, la misma será informada por el área responsable de la base de datos que es objeto de la aplicación del procedimiento y resuelta por la Dirección Jurídica, quien resolverá el tema teniendo en cuenta la Ley, los Decretos y demás normas reglamentarias o instructivas, y las jurisprudencias que en la materia se emitan.
+            </p>
+            <h4><strong>Acceso.</strong></h4>
+            <p>
+                Teniendo en cuenta que la facultad de disponer o de decidir sobre los datos personales está en cabeza del Titular de la información, esta facultad implica necesariamente el derecho del titular a acceder y conocer la información personal que está siendo objeto de tratamiento, incluyendo en este aspecto el alcance, condiciones y generalidades del tratamiento.
+
+            </p>
+            <p>
+               Teniendo en cuenta lo anterior, se garantiza este derecho en cabeza del Titular, el cual incluye.
+                </p><ol type="a">
+                    <li>1. El conocimiento de la existencia del tratamiento de sus datos personales.</li>
+                    <li>2. El acceso a sus datos personales.</li>
+                    <li>3. Las circunstancias del tratamiento de los datos personales.</li>
+                </ol>
+            <h4><strong>Consulta.</strong></h4>
+            <p>
+                De conformidad con el artículo 14 de la Ley Estatutaria 1581 de 2012, los Titulares o sus causahabientes podrán consultar la información personal del Titular que repose en cualquier base de datos. Basado en esto, se garantiza este derecho suministrando a estos toda la información contenida en el registro individual o que esté vinculada con la identificación del Titular.
+            </p>
+            <p>
+                Según la naturaleza de la base de datos personales, la consulta será gestionada por el área responsable de la atención a la misma al interior de SEMANA.
+            </p>
+            <p>
+                Las consultas serán atendidas en un término máximo de diez (10) días hábiles contados a partir de la fecha de recibo de la misma. Cuando no fuere posible atender la consulta dentro de dicho término, se informará al interesado dentro del primer término conferido, en donde se expresará los motivos de la demora y señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término.
+            </p>
+            <h4><strong>Reclamo.</strong></h4>
+            <p>De conformidad con el artículo 15 de la Ley Estatutaria 1581 de 2012, el Titular o sus causahabientes que consideren que la información contenida en una base de datos debe ser objeto de corrección, actualización o supresión, o cuando adviertan el presunto incumplimiento de cualquiera de los deberes contenidos en la Ley Estatutaria 1581 de 2012, podrán presentar un reclamo el cual será tramitado bajo las siguientes reglas:</p>
+                <ol>
+                    <li value="1">
+                        1. El reclamo se formulará mediante comunicación realizada por el titular o sus causahabientes dirigida a SEMANA responsable o el encargado del Tratamiento, la cual debe incluir la información señalada en el artículo 15 de la Ley Estatutaria 1581 de 2012. Si el reclamo resulta incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes a la recepción del reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido del reclamo. En todo caso si la comunicación es dirigida a SEMANA y no tiene la calidad para responder la comunicación, SEMANA, sin necesidad de comunicarlo a la persona que realiza la reclamación, dará conocimiento de la misma a la sociedad que deba dar respuesta.
+                    <li>2. En caso de que SEMANA reciba un reclamo que no sea competente para resolver, dará traslado a quien corresponda en un término máximo de dos (2) días hábiles e informará de la situación al interesado.</li>
+                    </li>
+                    <li>
+                        3. Una vez recibido el reclamo completo, se incluirá en la base de datos una leyenda que diga "reclamo en trámite" y el motivo del mismo, en un término no mayor a dos (2) días hábiles. Dicha leyenda deberá mantenerse hasta que el reclamo sea decidido.
+
+                    </li>
+                    <li> 
+                        4. El término máximo para atender el reclamo será de quince (15) días hábiles contados a partir del día siguiente a la fecha de su recibo. Cuando no fuere posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su reclamo, la cual en ningún caso podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término.<br>
+                    </li>
+                
+				<li>5. En cualquier tiempo y gratuitamente, la persona natural Titular de los datos personales o su representante podrá solicitar la rectificación, actualización o supresión de sus datos personales previa acreditación de su identidad.</li>
+				</ol>
+
+            <p>
+                La solicitud de rectificación, actualización o supresión de sus datos personales debe ser presentada a través de los medios proporcionados señalados en el aviso de privacidad y deberá contener como mínimo la siguiente información:
+                </p><ol>
+                    <li value="1">1. El nombre y domicilio del Titular o representante o cualquier otro medio para recibir la respuesta a su solicitud.</li>
+                    <li>2. Los documentos que acrediten la identidad o la representación del Titular de los datos personales.</li>
+                    <li>3. La descripción clara y precisa de los datos personales y de los hechos que dan lugar al reclamo.</li>
+                    <li>4. Los documentos que se desean hacer valer en la reclamación.</li>
+                </ol>
+            <p>
+                La supresión implica la eliminación total o parcial de la información personal de acuerdo por lo solicitado por el Titular, de los registros, archives y bases de datos o tratamientos realizados por SEMANA.
+
+            </p>
+            <p>
+                Según la naturaleza de la Base de datos personales, la reclamación será gestionada por el área responsable de la atención a la misma al interior de SEMANA.
+            </p>
+            <h4><strong>Requisito de procedibilidad.</strong></h4>
+            <p>
+                El Titular o causahabiente sólo podrá elevar queja ante la Superintendencia de Industria y Comercio una vez haya agotado el trámite de consulta o reclamo ante SEMANA.
+            </p>
+            <h4><strong>Revocatoria de la autorización.</strong></h4>
+            <p>
+                De acuerdo con lo establecido con la Ley, en el supuesto en que en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales, los Titulares o sus representantes (como es el caso de padres que ejerzan la patria potestad de un infante o adolescente) podrán solicitar la revocatoria de la autorización otorgada para el Tratamiento de los mismos, salvo que por disposición legal o contractual se impida dicha revocatoria, indicando en dicho caso, las razones concretas con base en las cuales considera que se está dando la situación de no respecto a los mencionados alcances.
+
+            </p>
+            <p>
+              SEMANA al ser responsable o el encargado del Tratamiento, según el caso, deberá confirmar haber recibido la solicitud de revocatoria de autorización, incluyendo su fecha de recepción. Se podrá objetar la misma si a juicio de SEMANA no se presentan el supuesto indicado por el Titular o si tal revocatoria implica una afectación para el seguimiento o cumplimiento de derechos o de obligaciones por parte de la entidad y respecto del Titular, caso en el cual deberá informarlo al mismo por escrito para que éste tome las medidas ante las autoridades que considere pertinentes.
+            </p>
+            <p>
+                La solicitud de revocatoria de la autorización puede ser total o parcial. Será total cuando se solicite la revocatoria de la totalidad de las finalidades consentidas a través de la autorización; será parcial cuando se solicite la revocatoria de algunas finalidades dependiendo de la solicitud de revocatoria. Este calificativo deberá ser expresado de manera clara en la solicitud de revocatoria de la autorización.
+            </p>
+            <h2><strong>Seguridad de la información.</strong></h2>
+            <h4><strong>Medidas de seguridad de la información.</strong></h4>
+            <p>
+                En desarrollo del principio de seguridad establecido en la Ley Estatutaria 1581 de 2012, SEMANA implementara las medidas técnicas, humanas y administrativas adicionales en caso de requerirse, que sean necesarias para otorgar seguridad a los registros, mediante los cuales se evitará su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento.
+            </p>
+            <h4><strong>Registro de las Bases.</strong></h4>
+            <p>
+               SEMANA en su calidad de Responsable y Encargado de Tratamiento deberán proceder al registro de las bases en los términos indicados por las normas colombianas.
+
+            </p>
+            <h4><strong>Aceptación.</strong></h4>
+            <p>
+                Los Titulares de la información aceptan el tratamiento de sus datos personales conforme los términos de este Manual, al momento de proporcionar sus datos.
+
+            </p>
+            <h4><strong>Vigencia:</strong></h4>
+            <p>
+               Esta Política General de Privacidad es efectiva desde la fecha de su publicación
+            </p>
+	  	</div>
+	  	
+	  </div>
+	   <a class="especiales-lightbox-close" href="#"></a>
+	</div>
+
+	<!--   ///////		Fin Habeas Data 	//////////////	-->
+	<!-- 	//////////////		Proyectos aliados 	//////////	-->
+	<div class="especiales-lightbox-target" id="proyectosAliadosEspeciales">
+	  <div class="boxTyC-Especiales">
+	   		<h3 class="panelProyectosEspecial">Proyectos Aliados</h3>
+	   		<div class="clearfix"></div>
+	   		<ul class="inlineEspecialModal">
+	   			<li><a target="_blank" class="left" href="http://www.verdadabierta.com"><img width="100%" border="0" align="absmiddle" class="imagen_proyectos" src="http://www.semana.com/img/convenios/verdad_abierta.gif"></a></li>
+	   			<li class="right"><a target="_blank" class="right imagen_proyectos dw" href="http://www.dw.de/spanish"><img width="80%" border="0" align="absmiddle" class="imagen_proyectos" src="http://www.semana.com/img/convenios/dw.gif"></a></li>
+	   		</ul>
+	  </div>
+	   <a class="especiales-lightbox-close" href="#"></a>
+	</div>
+	<!-- 	//////////////	Fin	Proyectos aliados 	//////////	-->
+
+ </body>
+</html>
