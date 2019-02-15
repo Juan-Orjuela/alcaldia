@@ -3,6 +3,129 @@
 GENERALES
 ============
 */
-#content img {
+#fullpage {
+    margin-top: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+#fullpage:before {
+   content:'';
+    width: 100%;
+    height: 2rem;
+    background: white;
+    position: absolute ;
+    top:0;
+    z-index: 2; 
+}
+#fullpage .s-semana {
+    background: #ededed;
+}
+#fullpage .s-semana:before,
+#fullpage .s-semana:after {
+    content:'';
+    width: 2rem;
+    height: 100%;
+    background: white;
+    position: absolute ;
+    top:0;
+    z-index: 2;
+}
+#fullpage .s-semana:after {
+    right: 0;
+}
+#fullpage .s-semana img {
     max-width: 100%;
+}
+#fp-nav.right {
+    right: .2rem;
+}
+#fp-nav ul li {
+    margin: 12px 7px;
+}
+#fp-nav ul li a span {
+    border-radius: 16px !important;
+    background: #6b6a6a;
+}
+#fp-nav ul li .fp-tooltip {
+    font-family: 'Roboto', sans-serif;
+    background: #2da0e2;
+    padding: 0.1em .5rem 0;
+    text-transform: uppercase;
+    letter-spacing:0.05em;
+}
+#fp-nav ul li:nth-child(5) {
+    height: 20px;
+}
+#fp-nav ul li:nth-child(5) a span {
+    height: 20px !important;
+    top:2px !important;
+    margin-top: -2px!important
+}
+/*
+============
+ANIMACIONES
+============
+*/
+@keyframes flota {
+    0% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+/*
+============
+Fila 1
+============
+*/
+#fullpage h1,
+#fullpage h1 small {
+    font-weight: 700;
+    
+}
+#fullpage h1 {
+    margin-bottom:2rem;
+    line-height:1;
+    font-size: 4.5rem ;
+}
+#fullpage h1 small {
+    background:#2da0e2;
+    color: white;
+    padding: 0 .5rem;
+    font-size: 3.2rem;
+}
+.carrusel {
+    border: 1px solid #b3b3b3;
+    padding:1rem
+}
+.slick-dots li button:before {
+    color:#2da0e2;
+    transition: all linear .25s;
+}
+.slick-dots li.slick-active button:before {
+    color:#2da0e2;
+    font-size:12px;
+}
+#fila-1 .bajar {
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    bottom: 4rem;
+    left:50%;
+    background: #2da0e2;
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.57);
+    animation: flota 1.2s linear infinite alternate;
+}
+#fila-1 .bajar:hover {
+    animation-play-state:paused;
+    background: #6ac6fb;
+}
+#fila-1 .bajar img {
+    width: 14px;
+    position: relative;
+    top: 20%
 }

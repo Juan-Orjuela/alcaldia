@@ -1,11 +1,11 @@
 $(document).ready(function() {
     //INCIAR FULLPAGE
 	$('#fullpage').fullpage({
-		anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion', 'ubicacion'],
+		anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion', 'ubicacion', 'footer'],
         //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Ubicación']
+        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Construcción', 'Ubicación', 'Cierre']
 		
 	});
 
@@ -18,6 +18,7 @@ $(document).ready(function() {
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        arrows:false
       });
 });
