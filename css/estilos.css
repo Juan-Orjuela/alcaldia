@@ -4,7 +4,7 @@ GENERALES
 ============
 */
 /*Iniciales*/
-#fullpage #fila-1 h1,
+/*#fullpage #fila-1 h1,
 
 #fullpage p,
 #fullpage .carrusel,
@@ -12,7 +12,7 @@ GENERALES
 #fullpage .txt-puntos i,
 #fullpage .txt-cuadrados {
     opacity: 0;
-}
+}*/
 #fullpage {
     margin-top: 2.8rem;
     font-family: 'Roboto', sans-serif;
