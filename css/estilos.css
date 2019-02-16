@@ -108,7 +108,73 @@ GENERALES
     position: absolute;
     border-radius: 100%;
 }
+.animacion {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-position: left top;
+   background-size: 200% 100%;
+   animation: stopMotion 1s steps(2) infinite;
+}
+@keyframes stopMotion {
+    100% { background-position: -200% top; }
+}
+#fullpage h1, #fullpage h1 small {
+    font-weight: 900;
+}
 
+#fullpage h1 {
+    margin-bottom: 2rem;
+    line-height: 1;
+    font-size: 4.5rem ;
+}
+
+#fullpage h1 small {
+    background: #2da0e2;
+    color: white;
+    padding: 0 .5rem;
+    font-size: 3.2rem;
+}
+.carrusel {
+    border: 1px solid #b3b3b3;
+    padding: 1rem
+}
+
+.slick-dots li button:before {
+    color: #2da0e2;
+    transition: all linear .25s;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #2da0e2;
+    font-size: 12px;
+}
+#fullpage h2.cifra {
+    line-height: 1;
+    font-size: 3.2rem ;
+    font-weight: 900
+}
+
+#fullpage h2.cifra .num {
+    font-size: 4.5rem;
+    margin-right: 0.1em;
+}
+
+#fullpage .large {
+    font-size: 2rem;
+}
+.resaltado {
+    background: #00dad9;
+    color: white;
+    padding: 0 .5rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.uni  {
+    font-size: 3.2rem;
+    font-weight: 900;
+}
 /*
 ============
 Textura de puntos
@@ -152,37 +218,7 @@ ANIMACIONES
 Fila 1
 ============
 */
-#fullpage h1, #fullpage h1 small {
-    font-weight: 900;
-}
 
-#fullpage h1 {
-    margin-bottom: 2rem;
-    line-height: 1;
-    font-size: 4.5rem ;
-}
-
-#fullpage h1 small {
-    background: #2da0e2;
-    color: white;
-    padding: 0 .5rem;
-    font-size: 3.2rem;
-}
-
-.carrusel {
-    border: 1px solid #b3b3b3;
-    padding: 1rem
-}
-
-.slick-dots li button:before {
-    color: #2da0e2;
-    transition: all linear .25s;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #2da0e2;
-    font-size: 12px;
-}
 
 #fila-1 .bajar {
     width: 50px;
@@ -226,37 +262,20 @@ Fila 1
 Fila 2
 ============
 */
-#fullpage h2.cifra {
-    line-height: 1;
-    font-size: 3.2rem ;
-    font-weight: 900
-}
-
-#fullpage h2.cifra .num {
-    font-size: 4.5rem;
-    margin-right: 0.1em;
-}
-
-#fullpage .large {
-    font-size: 2rem;
-}
-
-#fullpage #fila-2 .col-12 {
+#fila-2 .col-12 {
     text-align: center;
 }
 
-#fullpage #fila-2 .ilustracion {
+#fila-2 .ilustracion {
     padding-top: 95.47735%;
     margin-top: 2rem;
-    width: 90%;
-    margin-left:9%;
 }
 
 #fila-2 .conector {
     width: 50%;
     top: 50%;
     left: 0;
-    height: 50vh;
+    height: 46vh;
     z-index: 5;
     margin-left: 10%;
 }
@@ -286,4 +305,105 @@ Fila 2
 #fila-2 .tc-3 {
     bottom: 10%;
     right: 50%;
+}
+#fila-2 .animacion {
+    background-image: url('../imgs/ilustracion-1/animacion/sprite.png')
+}
+#fila-2 .cont-ilustracion {
+    width: 90%;
+    margin-left: 10%;
+}
+/*
+============
+Fila 3
+============
+*/
+#fila-3 #il-2 {
+    padding-top: 95.442359%;
+}
+#fila-3 #il-3 {
+    padding-top: 95.442359%;
+    margin-top: -3.55%;
+    margin-left: -.5%;
+    position: relative;
+}
+#fila-3 #il-2 .animacion {
+    background-image: url('../imgs/ilustracion-2/animacion/sprite.png')
+}
+#fila-3 #il-3 .animacion {
+    background-image: url('../imgs/ilustracion-3/animacion/sprite.png')
+}
+#fila-3 .ci-2-3 {
+    margin-top: 2rem;
+}
+#fila-3 .cont-ilustracion {
+   width: 50%;
+   max-width: 420px;
+   float: left; 
+}
+#fila-3 .col-6 {
+    text-align: center;
+}
+#fila-3 h2 {
+    margin-bottom: -0.05em;
+    line-height: 1;
+}
+#fila-3 .uni {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+#fila-3 .conector-1 {
+    width: 45%;
+    top: 20%;
+    right: -10%;
+    height: 100%;
+    z-index: 5;
+    margin-left: 10%;
+}
+#fila-3 .conector-1 .linea {
+    width: 100%;
+    top: 0;
+    right: 0;
+    border-top: 1px dashed black;
+    border-left: 1px dashed black;
+}
+#fila-3 .conector-1 .fin {
+    left: -10px;
+}
+
+#fila-3 .conector-2 {
+    width: 10%;
+    top: 75%;
+    right: 5%;
+    height: 35vh;
+    z-index: 5;
+    margin-left: 10%;
+}
+#fila-3 .conector-2 .linea {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px dashed black;
+    border-right: 1px dashed black;
+}
+#fila-3 .conector-2 .fin {
+    right: -10px;
+}
+
+#fila-3 .txt-puntos {
+    top: 20%;
+    left: 0;
+}
+#fila-3 .tc-1 {
+    top: 35%;
+    left: 10%;
+}
+#fila-3 .tc-2 {
+    top: 60%;
+    right: 10%;
+}
+#fila-3 .tc-3 {
+    bottom: 10%;
+    left: 40%;
 }

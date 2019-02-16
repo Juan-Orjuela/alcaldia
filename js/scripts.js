@@ -87,13 +87,13 @@ $(document).ready(function () {
             loop: false,
             autoplay: false,
             easing: 'linear'
-            
+
         })
             .add({
                 targets: '#fila-' + slide + ' .linea',
                 width: [0, '100%'],
                 duration: 1500,
-                delay:3000
+                delay: 3000
             })
             .add({
                 targets: '#fila-' + slide + ' .linea',
@@ -144,7 +144,7 @@ $(document).ready(function () {
                 delay: anime.stagger(500)
             })
             .add({
-                targets: '#fila-' + slide + ' .anim',
+                targets: '#fila-' + slide + ' .animacion',
                 opacity: {
                     value: [0, 1],
                     duration: 500
@@ -192,7 +192,6 @@ $(document).ready(function () {
                         });
                     break;
                 case 2:
-
                     animacion.add({
                         targets: '#fila-2 .num',
                         opacity: {
@@ -226,7 +225,38 @@ $(document).ready(function () {
                         }, '-=1500');
                     break;
                 case 3:
-                    console.log('Si es el slide 3');
+                    animacion
+                        .add({
+                            targets: '#fila-3 .num',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            innerHTML: {
+                                value: [0, 57000],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=500')
+                        .add({
+                            targets: '#fila-3 .sig',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        })
+                        .add({
+                            targets: '#fila-3 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            }
+                        }, '-=1500');
                     break;
                 case 4:
                     console.log('Si es el slide 3');
