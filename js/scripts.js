@@ -1,17 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //INCIAR FULLPAGE
-	$('#fullpage').fullpage({
-		anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion', 'ubicacion', 'footer'],
+    $('#fullpage').fullpage({
+        anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion', 'ubicacion', 'footer'],
         //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Construcción', 'Ubicación', 'Cierre']
-		
-	});
+        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Construcción', 'Ubicación', 'Cierre'],
+        afterLoad: function (anchorLink, index) {
+            animarSlide(index);
+        }
 
-	//methods
+    });
+    //methods
     //$.fn.fullpage.setAllowScrolling(false);
-    
+
     //INICIAR SLICK PARA CARRUSELES
     $('.carrusel').slick({
         dots: true,
@@ -19,39 +21,259 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
-        arrows:false
-      });
-      //Generar textura de puntos ========
-	$('.txt-puntos').each(function () {
-		var col = $(this).data("col"),
-			row = $(this).data("row"),
-			ancho = (col - 1) * 16 + 2 + "px",
-			alto = (row - 1) * 16 + 2 + "px",
-			nCol = 0,
-			nRow = 0;
+        arrows: false
+    });
 
-		$(this).css({
-			width: ancho,
-			height: alto
-		});
+    //Generar textura de puntos ========
+    $('.txt-puntos').each(function () {
+        var col = $(this).data("col"),
+            row = $(this).data("row"),
+            ancho = (col - 1) * 16 + 2 + "px",
+            alto = (row - 1) * 16 + 2 + "px",
+            nCol = 0,
+            nRow = 0;
+        $(this).css({
+            width: ancho,
+            height: alto
+        });
+        for (var i = 1; i <= col * row; i++) {
+            if (i % col == 1) {
+                nCol = 0;
+                nRow++;
+            } else {
+                nCol++;
+            }
+            var pTop = nRow * 16 - 16,
+                pLeft = nCol * 16;
+            //console.log("Top: "+ pTop + ", Left: "+ pLeft + " - " + index);
+            $(this).append('<i style=\"top: ' + pTop + 'px; left: ' + pLeft + 'px\"></i>');
+        }
+    });
+    //Bajar con flechas
+    $('.bajar').on('click', function (e) {
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+    });
 
-		for (var i = 1; i <= col * row; i++) {
+    //ANIMAR SLIDES
+    function animarSlide(slide) {
+        console.log(slide);
+        var animacion = anime.timeline({
+            loop: false,
+            autoplay: false,
+            easing: 'linear'
+        });
+        var animacionTxt = anime.timeline({
+            loop: false,
+            autoplay: false,
+            easing: 'linear',
+            delay: 1000
+        }).add({
+            targets: '#fila-' + slide + ' .txt-puntos i',
+            opacity: [0, 1],
+            delay: function () {
+                return anime.random(0, 1000);
+            }
+        })
+            .add({
+                targets: '#fila-' + slide + ' .txt-cuadros',
+                opacity: [0, 1],
+                duration: 1000,
+                delay: anime.stagger(200)
+            }, '-=200');
 
-			if (i % col == 1) {
-				nCol = 0;
-				nRow++;
-			} else {
-				nCol++;
-			}
 
-			var pTop = nRow * 16 - 16,
-				pLeft = nCol * 16;
+        var animacionConector = anime.timeline({
+            loop: false,
+            autoplay: false,
+            easing: 'linear'
+            
+        })
+            .add({
+                targets: '#fila-' + slide + ' .linea',
+                width: [0, '100%'],
+                duration: 1500,
+                delay:3000
+            })
+            .add({
+                targets: '#fila-' + slide + ' .linea',
+                height: [0, '100%'],
+                duration: 1500
+            })
+            .add({
+                targets: '#fila-' + slide + ' .fin',
+                opacity: [0, 1],
+                duration: 500
+            });
+        var animacionIlustra = anime.timeline({
+            loop: false,
+            autoplay: false,
+            easing: 'linear'
+        })
+            .add({
+                targets: '#fila-' + slide + ' .piso',
+                translateY: {
+                    value: [-200, 0],
+                    duration: 1200,
+                    easing: 'easeOutQuad'
+                },
+                opacity: {
+                    value: [0, 1],
+                    duration: 200
+                }
+            })
+            .add({
+                targets: '#fila-' + slide + ' .pared',
+                translateY: {
+                    value: [-200, 0],
+                    duration: 1200,
+                    easing: 'easeOutQuad'
+                },
+                opacity: {
+                    value: [0, 1],
+                    duration: 200
+                },
+                delay: anime.stagger(1000)
+            }, '-=1000')
+            .add({
+                targets: '#fila-' + slide + ' .elem',
+                opacity: {
+                    value: [0, 1],
+                    duration: 1500
+                },
+                delay: anime.stagger(500)
+            })
+            .add({
+                targets: '#fila-' + slide + ' .anim',
+                opacity: {
+                    value: [0, 1],
+                    duration: 500
+                },
+                delay: anime.stagger(200 * 1),
+                complete: animacionConector.play()
+            }, '-=500');
 
-			//console.log("Top: "+ pTop + ", Left: "+ pLeft + " - " + index);
 
-			$(this).append('<i style=\"top: ' + pTop + 'px; left: ' + pLeft + 'px\"></i>');
-		}
-	});
 
-//Fin
+        function animCustom() {
+            switch (slide) {
+                case 1:
+                    animacion.add({
+                        targets: '#fila-1 h1',
+                        translateY: {
+                            value: [20, 0],
+                            duration: 800
+                        },
+                        opacity: {
+                            value: [0, 1],
+                            duration: 2000
+                        }
+                    })
+                        .add({
+                            targets: '#fila-1 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            }
+                        }, '-=800')
+                        .add({
+                            targets: '#fila-1 .carrusel',
+                            opacity: [0, 1],
+                            duration: 1000
+                        }, '-=1500')
+                        .add({
+                            targets: '#fila-1 .bajar',
+                            opacity: [0, 1],
+                            duration: 2000
+                        });
+                    break;
+                case 2:
+
+                    animacion.add({
+                        targets: '#fila-2 .num',
+                        opacity: {
+                            value: [0, 1],
+                            duration: 2000
+                        },
+                        innerHTML: {
+                            value: [0, 12000],
+                            duration: 2000
+                        },
+                        easing: 'linear',
+                        round: 1
+                    }, '-=500')
+                        .add({
+                            targets: '#fila-2 .uni',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        })
+                        .add({
+                            targets: '#fila-2 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            }
+                        }, '-=1500');
+                    break;
+                case 3:
+                    console.log('Si es el slide 3');
+                    break;
+                case 4:
+                    console.log('Si es el slide 3');
+                    break;
+                case 5:
+                    console.log('Si es el slide 3');
+                    break;
+                case 6:
+                    console.log('Si es el slide 3');
+                    break;
+                case 7:
+                    console.log('Si es el slide 3');
+                    break;
+                default:
+                    console.log('Si es el slide 223423');
+            }
+        }
+        animCustom();
+        /*animacion.add({
+            targets: ['#fila-1 h1', '#fila-1 small'],
+            translateY: {
+                value: [-20, 0],
+                duration: 800
+            },
+            opacity: {
+                value: [0, 1],
+                duration: 1200
+            },
+            easing: 'linear',
+            delay: function (el, i) {
+                return 1000 + (i * 200);
+            },
+            offset: '-=1000'
+        })
+            .add({
+                targets: '#fila-1 .carrusel',
+                opacity: [0, 1],
+                duration: 2000,
+                easing: 'linear',
+                offset: '-=1000'
+            });*/
+        //Final animacion
+
+        animacion.play();
+        animacionTxt.play();
+        animacionIlustra.play();
+    } //Fin animar Slide
+
+    //Fin
 });

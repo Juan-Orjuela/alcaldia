@@ -3,6 +3,16 @@
 GENERALES
 ============
 */
+/*Iniciales*/
+#fullpage #fila-1 h1,
+
+#fullpage p,
+#fullpage .carrusel,
+#fullpage .bajar,
+#fullpage .txt-puntos i,
+#fullpage .txt-cuadrados {
+    opacity: 0;
+}
 #fullpage {
     margin-top: 2.8rem;
     font-family: 'Roboto', sans-serif;
@@ -85,7 +95,9 @@ GENERALES
 .conector {
     position: absolute;
 }
-
+.conector .linea {
+    position: absolute;
+}
 .conector .fin {
     content: '';
     width: 20px;
@@ -112,13 +124,13 @@ Textura de puntos
     display: block;
     width: 4px;
     height: 4px;
-    background: #ffffff;
+    background: #a0a0a0;
 }
 .txt-cuadros {
     display: block;
     width: 20px;
     height: 20px;
-    background: #ffffff;
+    background: #c5c5c5;
 }
 /*
 ============
@@ -244,11 +256,17 @@ Fila 2
     width: 50%;
     top: 50%;
     left: 0;
-    border-top: 1px dashed black;
-    border-right: 1px dashed black;
     height: 50vh;
     z-index: 5;
     margin-left: 10%;
+}
+#fila-2 .conector .linea {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px dashed black;
+    border-right: 1px dashed black;
+    height: 100%;
 }
 #fila-2 .conector .fin {
     right: -10px;
