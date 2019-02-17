@@ -984,7 +984,7 @@ Fila 8
     width: 1px;
     top: 110%;
     right: -1px;
-    height: 15vh;
+    height: 17vh;
     z-index: 5;
 }
 
@@ -1026,4 +1026,24 @@ Fila 8
     bottom: 10%;
     right: 25%;
     background: #a0a0a0;
+}
+/*
+============
+Fila 9
+============
+*/
+#fila-9 {
+    text-align: center;
+}
+#fila-9 h2 {
+    margin-top: 1rem;
+}
+#fila-9 .container-mapa {
+    background: yellow;
+    height: 60vh;
+    background: url('../imgs/mapa@2x.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
