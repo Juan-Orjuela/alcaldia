@@ -259,7 +259,31 @@ $(document).ready(function () {
                         }, '-=1500');
                     break;
                 case 4:
-                    console.log('Si es el slide 3');
+                animacion.add({
+                    targets: '#fila-4 .num',
+                    opacity: [0 , 1],
+                    duration: 2000,                    
+                    easing: 'linear'
+                    
+                })
+                    .add({
+                        targets: '#fila-4 .uni',
+                        opacity: {
+                            value: [0, 1],
+                            duration: 1000
+                        }
+                    }, '-=1000')
+                    .add({
+                        targets: '#fila-4 .large',
+                        translateY: {
+                            value: [20, 0],
+                            duration: 800
+                        },
+                        opacity: {
+                            value: [0, 1],
+                            duration: 2000
+                        }
+                    }, '-=500');
                     break;
                 case 5:
                     console.log('Si es el slide 3');

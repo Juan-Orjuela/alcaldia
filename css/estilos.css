@@ -376,7 +376,7 @@ Fila 3
     width: 10%;
     top: 75%;
     right: 5%;
-    height: 35vh;
+    height: 55vh;
     z-index: 5;
     margin-left: 10%;
 }
@@ -406,4 +406,70 @@ Fila 3
 #fila-3 .tc-3 {
     bottom: 10%;
     left: 40%;
+}
+/*
+============
+Fila 4
+============
+*/
+#fila-4 .num-wrapper {
+    position: relative;
+    
+}
+#fila-4 .num-wrapper h2 {
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 1em;
+    position: absolute;
+}
+#fila-4 .num-wrapper .uni {
+    display: inline-block;
+    line-height: 1;
+    margin-left: 3.5rem;
+}
+#fila-4 .large {
+    margin-left: 3.5rem;
+}
+#fila-4 .ilustracion {
+    padding-top: 103.03%;
+    margin-top: 2rem;
+}
+#fila-4 .animacion {
+    background-image: url('../imgs/ilustracion-10/animacion/sprite.png')
+}
+#fila-4 .conector {
+    width: 1px;
+    top: 55%;
+    left: 40%;
+    height: 55vh;
+    z-index: 5;
+}
+#fila-4 .conector .linea {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px dashed black;
+    border-right: 1px dashed black;
+}
+#fila-4 .conector .fin {
+    right: -10px;
+}
+#fila-4 .txt-puntos {
+    bottom: 10%;
+    right: 2.2rem;
+}
+#fila-4 .tc-1 {
+    bottom: 10%;
+    left: 10%;
+}
+#fila-4 .tc-2 {
+    top: 10%;
+    left: 60%;
+}
+#fila-4 .tc-3 {
+    bottom: 10%;
+    left: 60%;
 }
