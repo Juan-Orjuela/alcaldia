@@ -73,6 +73,7 @@ GENERALES
     letter-spacing: 0.05em;
 }
 
+/*
 #fp-nav ul li:nth-child(5) {
     height: 20px;
 }
@@ -82,7 +83,7 @@ GENERALES
     top: 2px !important;
     margin-top: -2px!important
 }
-
+*/
 .ilustracion {
     position: relative;
 }
@@ -95,9 +96,11 @@ GENERALES
 .conector {
     position: absolute;
 }
+
 .conector .linea {
     position: absolute;
 }
+
 .conector .fin {
     content: '';
     width: 20px;
@@ -108,18 +111,23 @@ GENERALES
     position: absolute;
     border-radius: 100%;
 }
+
 .animacion {
-   position: absolute;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   background-position: left top;
-   background-size: 200% 100%;
-   animation: stopMotion 1s steps(2) infinite;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: left top;
+    background-size: 200% 100%;
+    animation: stopMotion 1s steps(2) infinite;
 }
+
 @keyframes stopMotion {
-    100% { background-position: -200% top; }
+    100% {
+        background-position: -200% top;
+    }
 }
+
 #fullpage h1, #fullpage h1 small {
     font-weight: 900;
 }
@@ -136,6 +144,7 @@ GENERALES
     padding: 0 .5rem;
     font-size: 3.2rem;
 }
+
 .carrusel {
     border: 1px solid #b3b3b3;
     padding: 1rem
@@ -150,20 +159,22 @@ GENERALES
     color: #2da0e2;
     font-size: 12px;
 }
-#fullpage h2.cifra {
-    line-height: 1;
+
+#fullpage h2 {
     font-size: 3.2rem ;
     font-weight: 900
 }
 
-#fullpage h2.cifra .num {
+#fullpage .num {
     font-size: 4.5rem;
     margin-right: 0.1em;
+    font-weight: 900;
 }
 
 #fullpage .large {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
+
 .resaltado {
     background: #00dad9;
     color: white;
@@ -171,17 +182,18 @@ GENERALES
     font-weight: 500;
     letter-spacing: 0.05em;
 }
-.uni  {
-    font-size: 3.2rem;
+
+.uni {
+    font-size: 2.8rem;
     font-weight: 900;
 }
+
 /*
 ============
 Textura de puntos
 ============
 */
-.txt-puntos,
-.txt-cuadros {
+.txt-puntos, .txt-cuadros {
     position: absolute;
 }
 
@@ -192,12 +204,28 @@ Textura de puntos
     height: 4px;
     background: #a0a0a0;
 }
+
 .txt-cuadros {
     display: block;
     width: 20px;
     height: 20px;
     background: #c5c5c5;
 }
+
+.graf {
+    position: relative;
+    text-align: center;
+}
+
+.graf .num {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    margin-top: -0.75em;
+}
+
 /*
 ============
 ANIMACIONES
@@ -218,8 +246,6 @@ ANIMACIONES
 Fila 1
 ============
 */
-
-
 #fila-1 .bajar {
     width: 50px;
     height: 50px;
@@ -249,14 +275,17 @@ Fila 1
     bottom: 20%;
     left: 20%;
 }
+
 #fila-1 .tc-1 {
     top: 10%;
     right: 10%;
 }
+
 #fila-1 .tc-2 {
     bottom: 10%;
     right: 20%;
 }
+
 /*
 ============
 Fila 2
@@ -279,6 +308,7 @@ Fila 2
     z-index: 5;
     margin-left: 10%;
 }
+
 #fila-2 .conector .linea {
     width: 100%;
     top: 0;
@@ -287,32 +317,40 @@ Fila 2
     border-right: 1px dashed black;
     height: 100%;
 }
+
 #fila-2 .conector .fin {
     right: -10px;
 }
+
 #fila-2 .txt-puntos {
     top: 40%;
     left: 65%;
 }
+
 #fila-2 .tc-1 {
     top: 40%;
     left: 10%;
 }
+
 #fila-2 .tc-2 {
     top: 40%;
     right: 10%;
 }
+
 #fila-2 .tc-3 {
     bottom: 10%;
     right: 50%;
 }
+
 #fila-2 .animacion {
     background-image: url('../imgs/ilustracion-1/animacion/sprite.png')
 }
+
 #fila-2 .cont-ilustracion {
     width: 90%;
     margin-left: 10%;
 }
+
 /*
 ============
 Fila 3
@@ -321,33 +359,41 @@ Fila 3
 #fila-3 #il-2 {
     padding-top: 95.442359%;
 }
+
 #fila-3 #il-3 {
     padding-top: 95.442359%;
     margin-top: -3.55%;
     margin-left: -.5%;
     position: relative;
 }
+
 #fila-3 #il-2 .animacion {
     background-image: url('../imgs/ilustracion-2/animacion/sprite.png')
 }
+
 #fila-3 #il-3 .animacion {
     background-image: url('../imgs/ilustracion-3/animacion/sprite.png')
 }
+
 #fila-3 .ci-2-3 {
     margin-top: 2rem;
 }
+
 #fila-3 .cont-ilustracion {
-   width: 50%;
-   max-width: 420px;
-   float: left; 
+    width: 50%;
+    max-width: 420px;
+    float: left;
 }
+
 #fila-3 .col-6 {
     text-align: center;
 }
+
 #fila-3 h2 {
     margin-bottom: -0.05em;
     line-height: 1;
 }
+
 #fila-3 .uni {
     margin-bottom: 0;
     line-height: 1;
@@ -361,6 +407,7 @@ Fila 3
     z-index: 5;
     margin-left: 10%;
 }
+
 #fila-3 .conector-1 .linea {
     width: 100%;
     top: 0;
@@ -368,6 +415,7 @@ Fila 3
     border-top: 1px dashed black;
     border-left: 1px dashed black;
 }
+
 #fila-3 .conector-1 .fin {
     left: -10px;
 }
@@ -380,6 +428,7 @@ Fila 3
     z-index: 5;
     margin-left: 10%;
 }
+
 #fila-3 .conector-2 .linea {
     width: 100%;
     top: 0;
@@ -387,6 +436,7 @@ Fila 3
     border-top: 1px dashed black;
     border-right: 1px dashed black;
 }
+
 #fila-3 .conector-2 .fin {
     right: -10px;
 }
@@ -395,18 +445,22 @@ Fila 3
     top: 20%;
     left: 0;
 }
+
 #fila-3 .tc-1 {
     top: 35%;
     left: 10%;
 }
+
 #fila-3 .tc-2 {
     top: 60%;
     right: 10%;
 }
+
 #fila-3 .tc-3 {
     bottom: 10%;
     left: 40%;
 }
+
 /*
 ============
 Fila 4
@@ -414,8 +468,8 @@ Fila 4
 */
 #fila-4 .num-wrapper {
     position: relative;
-    
 }
+
 #fila-4 .num-wrapper h2 {
     display: inline-block;
     line-height: 1;
@@ -425,21 +479,26 @@ Fila 4
     min-width: 1em;
     position: absolute;
 }
+
 #fila-4 .num-wrapper .uni {
     display: inline-block;
     line-height: 1;
     margin-left: 3.5rem;
 }
+
 #fila-4 .large {
     margin-left: 3.5rem;
 }
+
 #fila-4 .ilustracion {
     padding-top: 103.03%;
     margin-top: 2rem;
 }
+
 #fila-4 .animacion {
     background-image: url('../imgs/ilustracion-10/animacion/sprite.png')
 }
+
 #fila-4 .conector {
     width: 1px;
     top: 55%;
@@ -447,6 +506,7 @@ Fila 4
     height: 55vh;
     z-index: 5;
 }
+
 #fila-4 .conector .linea {
     width: 100%;
     top: 0;
@@ -454,22 +514,163 @@ Fila 4
     border-top: 1px dashed black;
     border-right: 1px dashed black;
 }
+
 #fila-4 .conector .fin {
     right: -10px;
 }
+
 #fila-4 .txt-puntos {
     bottom: 10%;
     right: 2.2rem;
 }
+
 #fila-4 .tc-1 {
     bottom: 10%;
     left: 10%;
 }
+
 #fila-4 .tc-2 {
     top: 10%;
     left: 60%;
 }
+
 #fila-4 .tc-3 {
     bottom: 10%;
     left: 60%;
 }
+
+/*
+============
+Fila 5
+============
+*/
+#fila-5 #il-4 {
+    padding-top: 95.51167%;
+}
+
+#fila-5 #il-5 {
+    padding-top: 95.51167%;
+    margin-top: -3.9%;
+    left: -2%;
+    position: relative;
+}
+
+#fila-5 #il-6 {
+    padding-top: 92.486444%;
+    max-width: 409px;
+}
+
+#fila-5 .ci-4, #fila-5 .ci-5 {
+    width: 50%;
+    max-width: 350px;
+    float: right;
+}
+
+#fila-5 .ci-6 {
+    position: absolute;
+    right: 23.5%;
+    left: initial;
+    top: 7%;
+    width: 54%;
+    max-width: 407px;
+}
+
+#fila-5 #il-4 .animacion {
+    background-image: url('../imgs/ilustracion-4/animacion/sprite.png')
+}
+
+#fila-5 #il-5 .animacion {
+    background-image: url('../imgs/ilustracion-5/animacion/sprite.png')
+}
+
+#fila-5 #il-6 .animacion {
+    background-image: url('../imgs/ilustracion-6/animacion/sprite.png')
+}
+#fila-5 .right-5 {
+    text-align: right;
+    max-width: 350px;
+    float: right;
+    line-height: 1.1;
+    margin-top: -2rem;
+}
+#fila-5 .right-5 .num {
+    line-height: 0.8;
+    font-size: 3.3rem;
+
+}
+#fila-5 .right-5 .uni {
+    font-size: 2rem;
+}
+#fila-5 .right-5 .uni:after {
+    content: '2';
+    font-size: 0.45em;
+    top: -1em;
+    position:  relative;
+}
+#fila-5 .right-5 .small {
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 100%;
+}
+#fila-5 h2 {
+    margin-top: 2rem;
+}
+#fila-5 .graf {
+    margin-top: 4rem;
+}
+#fila-5 .ci-4-5-6 {
+    margin-top: -4rem;
+}
+#fila-5 .conector {
+    width: 1px;
+    top: 75%;
+    left: 20%;
+    height: 35vh;
+    z-index: 5;
+}
+
+#fila-5 .conector .linea {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px dashed black;
+    border-right: 1px dashed black;
+}
+
+#fila-5 .conector .fin {
+    right: -10px;
+}
+#fila-5 .txt-puntos.tx-1{
+    top: 10%;
+    right: 2.2rem;
+}
+#fila-5 .txt-puntos.tx-2 {
+    top: 10%;
+    right: 30%;
+}
+#fila-5 .tc-1 {
+    top: 10%;
+    left: 10%;
+    background: #a0a0a0;
+}
+#fila-5 .diagonal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#fila-5 .diagonal::before {
+    content: '';
+    width: 400%;
+    position:absolute;
+    background: #ededed;
+    left: -50%;
+    top: -10%;
+    bottom: 40%;
+    transform: rotate(-10deg);
+    transform-origin: 10% 50%;
+}
+
+

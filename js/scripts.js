@@ -1,11 +1,11 @@
 $(document).ready(function () {
     //INCIAR FULLPAGE
     $('#fullpage').fullpage({
-        anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion', 'ubicacion', 'footer'],
-        //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion-tunal', 'construccion-fontanar', 'construccion-sancristobal', 'construccion-restantes', 'ubicacion', 'footer'],
+        sectionsColor: ['#EDEDED', '#EDEDED', '#EDEDED', '#EDEDED', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#EDEDED'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Construcción', 'Ubicación', 'Cierre'],
+        navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Avances Tunal', 'Avances Fontanar del Río', 'Avances San Cristobal', 'Próximas licitaciones', 'Ubicación', 'Cierre'],
         afterLoad: function (anchorLink, index) {
             animarSlide(index);
         }
@@ -114,7 +114,7 @@ $(document).ready(function () {
                 targets: '#fila-' + slide + ' .piso',
                 translateY: {
                     value: [-200, 0],
-                    duration: 1200,
+                    duration: 800,
                     easing: 'easeOutQuad'
                 },
                 opacity: {
@@ -126,20 +126,20 @@ $(document).ready(function () {
                 targets: '#fila-' + slide + ' .pared',
                 translateY: {
                     value: [-200, 0],
-                    duration: 1200,
+                    duration: 600,
                     easing: 'easeOutQuad'
                 },
                 opacity: {
                     value: [0, 1],
                     duration: 200
                 },
-                delay: anime.stagger(1000)
+                delay: anime.stagger(500)
             }, '-=1000')
             .add({
                 targets: '#fila-' + slide + ' .elem',
                 opacity: {
                     value: [0, 1],
-                    duration: 1500
+                    duration: 600
                 },
                 delay: anime.stagger(500)
             })
@@ -259,22 +259,36 @@ $(document).ready(function () {
                         }, '-=1500');
                     break;
                 case 4:
-                animacion.add({
-                    targets: '#fila-4 .num',
-                    opacity: [0 , 1],
-                    duration: 2000,                    
-                    easing: 'linear'
-                    
-                })
+                    animacion.add({
+                        targets: '#fila-4 .num',
+                        opacity: [0, 1],
+                        duration: 2000,
+                        easing: 'linear'
+
+                    })
+                        .add({
+                            targets: '#fila-4 .uni',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        }, '-=1000')
+                        .add({
+                            targets: '#fila-4 .large',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            }
+                        }, '-=500');
+                    break;
+                case 5:
+                    animacion
                     .add({
-                        targets: '#fila-4 .uni',
-                        opacity: {
-                            value: [0, 1],
-                            duration: 1000
-                        }
-                    }, '-=1000')
-                    .add({
-                        targets: '#fila-4 .large',
+                        targets: '#fila-5 h2',
                         translateY: {
                             value: [20, 0],
                             duration: 800
@@ -283,10 +297,48 @@ $(document).ready(function () {
                             value: [0, 1],
                             duration: 2000
                         }
-                    }, '-=500');
-                    break;
-                case 5:
-                    console.log('Si es el slide 3');
+                    })
+                    .add({
+                        targets: '#fila-5 .graf',
+                        opacity: {
+                            value: [0, 1],
+                            duration: 1000
+                        }
+                    }, '-=1000')
+                        .add({
+                            targets: '#fila-5 .graf .num',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            innerHTML: {
+                                value: [0, 12],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=500')
+                        .add({
+                            targets: '#fila-5 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            delay: anime.stagger(400)
+                        }, '-=1500')
+                        .add({
+                            targets: '#fila-5 .right-5 .num',
+                            innerHTML: {
+                                value: [0, 13533],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=1500');
                     break;
                 case 6:
                     console.log('Si es el slide 3');
