@@ -128,6 +128,12 @@ GENERALES
     }
 }
 
+@keyframes stopMotion3 {
+    100% {
+        background-position: -300% top;
+    }
+}
+
 #fullpage h1, #fullpage h1 small {
     font-weight: 900;
 }
@@ -741,17 +747,17 @@ Fila 6
 }
 
 #fila-6 .conector {
-    width: 1px;
+    width: 15%;
     top: 75%;
-    right: 20%;
-    height: 35vh;
+    right: 10%;
+    height: 45vh;
     z-index: 5;
 }
 
 #fila-6 .conector .linea {
     width: 100%;
     top: 0;
-    right: 0;
+    left: 0;
     border-top: 1px dashed black;
     border-right: 1px dashed black;
 }
@@ -775,13 +781,136 @@ Fila 6
     left: 20%;
     background: #a0a0a0;
 }
+
 #fila-6 .tc-2 {
     bottom: 10%;
     left: 20%;
     background: #a0a0a0;
 }
+
 #fila-6 .tc-3 {
     bottom: 10%;
     left: 50%;
+    background: #a0a0a0;
+}
+
+/*
+============
+Fila 7
+============
+*/
+#fila-7 .ci-11-12-13-14 {
+    margin-top: -3.5rem;
+}
+#fila-7 #il-11, #fila-7 #il-13 {
+    padding-top: 95.5237%;
+}
+
+#fila-7 #il-13 {
+    margin-top: -3.5%;
+    left: -0.3%;
+    position: relative;
+}
+
+#fila-7 #il-12 {
+    padding-top: 61.610633%;
+}
+
+#fila-7 #il-14 {
+    padding-top: 89.156626%;
+}
+
+#fila-7 .ci-11, #fila-7 .ci-13 {
+    width: 50%;
+    max-width: 340px;
+    float: right;
+}
+
+#fila-7 .ci-12 {
+    position: absolute;
+    right: 22.8%;
+    top: 37.9%;
+    width: 50%;
+    max-width: 406px;
+}
+
+#fila-7 .ci-14 {
+    position: absolute;
+    right: 2.8%;
+    top: 30.6%;
+    width: 50%;
+    max-width: 408px;
+    transform: rotate(-2.5deg)
+}
+
+#fila-7 #il-11 .animacion {
+    background-image: url('../imgs/ilustracion-11/animacion/sprite.png')
+}
+
+#fila-7 #il-12 .animacion {
+    background-image: url('../imgs/ilustracion-12/animacion/sprite.png')
+}
+
+#fila-7 #il-13 .animacion {
+    background-image: url('../imgs/ilustracion-13/animacion/sprite.png');
+    background-size: 300% 100%;
+    animation: stopMotion3 1s steps(3) infinite;
+}
+
+#fila-7 #il-14 .animacion {
+    background-image: url('../imgs/ilustracion-14/animacion/sprite.png')
+}
+
+#fila-7 .small {
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+#fila-7 .conector {
+    width: 25%;
+    top: 95%;
+    right: 65%;
+    height: 35vh;
+    z-index: 5;
+}
+
+#fila-7 .conector .linea {
+    width: 100%;
+    top: 0;
+    right: 0;
+    border-top: 1px dashed black;
+    border-left: 1px dashed black;
+}
+
+#fila-7 .conector .fin {
+    left: -10px;
+}
+
+#fila-7 .txt-puntos.tx-1 {
+    top: 10%;
+    left: 2.2rem;
+}
+
+#fila-7 .txt-puntos.tx-2 {
+    top: 10%;
+    right: 2.2rem;
+}
+
+#fila-7 .tc-1 {
+    top: 10%;
+    right: 20%;
+    background: #a0a0a0;
+}
+
+#fila-7 .tc-2 {
+    bottom: 10%;
+    left: 10%;
+    background: #a0a0a0;
+}
+
+#fila-7 .tc-3 {
+    bottom: 10%;
+    right: 10%;
     background: #a0a0a0;
 }

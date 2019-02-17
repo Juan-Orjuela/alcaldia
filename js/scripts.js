@@ -385,7 +385,39 @@ $(document).ready(function () {
                     }, '-=1500');
                     break;
                 case 7:
-                    console.log('Si es el slide 3');
+                animacion
+                .add({
+                    targets: '#fila-7 .graf',
+                    opacity: {
+                        value: [0, 1],
+                        duration: 1000
+                    }
+                })
+                    .add({
+                        targets: '#fila-7 .graf .num',
+                        opacity: {
+                            value: [0, 1],
+                            duration: 2000
+                        },
+                        innerHTML: {
+                            value: [0, 2],
+                            duration: 2000
+                        },
+                        easing: 'linear',
+                        round: 1
+                    }, '-=500')
+                    .add({
+                        targets: '#fila-7 p',
+                        translateY: {
+                            value: [20, 0],
+                            duration: 800
+                        },
+                        opacity: {
+                            value: [0, 1],
+                            duration: 2000
+                        },
+                        delay: anime.stagger(400)
+                    }, '-=1500');
                     break;
                 default:
                     console.log('Si es el slide 223423');
