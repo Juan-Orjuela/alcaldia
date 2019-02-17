@@ -215,7 +215,7 @@ Textura de puntos
     display: block;
     width: 20px;
     height: 20px;
-    background: #c5c5c5;
+    background: #a0a0a0;
 }
 
 .graf {
@@ -667,7 +667,7 @@ Fila 5
 #fila-5 .tc-1 {
     top: 10%;
     left: 10%;
-    background: #a0a0a0;
+    
 }
 
 #fila-5 .diagonal {
@@ -779,19 +779,19 @@ Fila 6
 #fila-6 .tc-1 {
     top: 10%;
     left: 20%;
-    background: #a0a0a0;
+    
 }
 
 #fila-6 .tc-2 {
     bottom: 10%;
     left: 20%;
-    background: #a0a0a0;
+    
 }
 
 #fila-6 .tc-3 {
     bottom: 10%;
     left: 50%;
-    background: #a0a0a0;
+    
 }
 
 /*
@@ -802,6 +802,7 @@ Fila 7
 #fila-7 .ci-11-12-13-14 {
     margin-top: -3.5rem;
 }
+
 #fila-7 #il-11, #fila-7 #il-13 {
     padding-top: 95.5237%;
 }
@@ -900,20 +901,21 @@ Fila 7
 #fila-7 .tc-1 {
     top: 10%;
     right: 20%;
-    background: #a0a0a0;
+    
 }
 
 #fila-7 .tc-2 {
     bottom: 10%;
     left: 10%;
-    background: #a0a0a0;
+    
 }
 
 #fila-7 .tc-3 {
     bottom: 10%;
     right: 10%;
-    background: #a0a0a0;
+    
 }
+
 /*
 ============
 Fila 8
@@ -923,18 +925,22 @@ Fila 8
     border: 1px dashed black;
     text-align: center
 }
+
 #fila-8 .col-cyan {
     color: white;
 }
+
 #fila-8 .col-6 {
     padding: 6rem;
 }
+
 #fila-8 .col-6 .recuadro {
     position: relative;
     z-index: 2;
 }
+
 #fila-8 .col-6::before {
-    content:'';
+    content: '';
     position: absolute;
     width: 90%;
     height: 90%;
@@ -942,24 +948,30 @@ Fila 8
     top: 5%;
     display: block;
 }
+
 #fila-8 .col-blanca:before {
     background: #ffffff;
 }
+
 #fila-8 .col-cyan:before {
     background: #00DAD9;
 }
+
 #fila-8 .col-cyan .num {
     line-height: 1;
     margin-top: -.2em;
 }
+
 #fila-8 h3 {
     font-weight: 300;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
+
 #fila-8 h3 strong {
     font-weight: 900;
 }
+
 #fila-8 .diagonal {
     position: absolute;
     width: 100%;
@@ -980,6 +992,7 @@ Fila 8
     transform: rotate(10deg);
     transform-origin: 10% 50%;
 }
+
 #fila-8 .conector {
     width: 1px;
     top: 110%;
@@ -1013,20 +1026,20 @@ Fila 8
 #fila-8 .tc-1 {
     top: 10%;
     right: 25%;
-    background: #a0a0a0;
+    
 }
 
 #fila-8 .tc-2 {
     bottom: 10%;
     left: 10%;
-    background: #a0a0a0;
+    
 }
 
 #fila-8 .tc-3 {
     bottom: 10%;
     right: 25%;
-    background: #a0a0a0;
 }
+
 /*
 ============
 Fila 9
@@ -1035,15 +1048,176 @@ Fila 9
 #fila-9 {
     text-align: center;
 }
+
 #fila-9 h2 {
     margin-top: 1rem;
 }
-#fila-9 .container-mapa {
-    background: yellow;
-    height: 60vh;
-    background: url('../imgs/mapa@2x.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 
+#fila-9 #mapa-cont {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto 0;
+}
+
+#fila-9 #mapa-cont #mapa {
+    position: relative;
+}
+
+#fila-9 .cont-hotspots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@keyframes latir {
+    from {
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+}
+
+#mapa .hotspot {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: white url('../imgs/mas.svg') center no-repeat;
+    background-size: 60%;
+    border-radius: 100%;
+    animation: latir 2s ease infinite alternate;
+    transition: all 1s;
+}
+
+#mapa .hotspot:hover {
+    animation-play-state: paused;
+}
+
+#mapa .hotspot[aria-describedby *= 'popover'] {
+    transform: rotate(225deg);
+}
+
+.popover {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popover-body {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    min-width: 240px;
+}
+
+.popover-body h4 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+}
+
+.popover-body .hnum {
+    display: inline-block;
+    width: 48%;
+    font-weight: 900;
+    float: left;
+    font-size: 1.2rem;
+    border-right: 1px solid black;
+    margin-right: 4%;
+}
+
+.popover-body .hinfo {
+    font-weight: 300;
+    font-size: .75rem;
+    width: 48%;
+    float: left;
+    line-height: 1.1;
+    padding-top: .2em;
+}
+
+.popover-body .hnum {
+    margin-bottom: 0.75rem;
+}
+
+.hot-1 {
+    top: 28%;
+    left: 22%;
+}
+
+.hot-2 {
+    top: 39%;
+    left: 11%;
+}
+
+.hot-3 {
+    top: 60%;
+    left: 68%;
+}
+
+.hot-4 {
+    top: 35%;
+    left: 72%;
+}
+
+.hot-5 {
+    top: 27%;
+    left: 57%;
+}
+
+.hot-6 {
+    top: 67%;
+    left: 52%;
+}
+
+.hot-7 {
+    top: 19%;
+    left: 40%;
+}
+#fila-9 .txt-puntos.tx-1 {
+    top: 10%;
+    left: 2.2rem;
+}
+
+#fila-9 .txt-puntos.tx-2 {
+    bottom: 10%;
+    right: 2.2rem;
+}
+#fila-9 .txt-puntos.tx-3 {
+    bottom: 10%;
+    left: 2.2rem;
+}
+#fila-9 .txt-puntos.tx-4 {
+    bottom: 50%;
+    right: 15%;
+}
+#fila-9 .tc-1 {
+    top: 10%;
+    right: 15%;
+}
+#fila-9 .tc-2 {
+    bottom: 50%;
+    left: 5%;
+}
+#fila-9 .tc-3 {
+    bottom: 10%;
+    right: 15%;
+}
+/*Controlar salto de animacion*/
+.section .container, .section .txt-puntos, .section .txt-cuadros {
+    opacity: 0;
+    transition: opacity 500ms 1000ms;
+}
+.section .txt-cuadros {
+    background: transparent;
+    transition: opacity 500ms 1000ms;
+}
+.section.active .txt-cuadros {
+    background: #a0a0a0;
+}
+
+.section.active .container, .section.active .txt-puntos, .section.active .txt-cuadros {
+    opacity: 1;
 }

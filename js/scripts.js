@@ -57,17 +57,18 @@ $(document).ready(function () {
 
     //ANIMAR SLIDES
     function animarSlide(slide) {
-        console.log(slide);
+        //A esta animacion se agregan los elementos segun el slide
         var animacion = anime.timeline({
             loop: false,
             autoplay: false,
             easing: 'linear'
         });
+        
+        //Animacion de texturas
         var animacionTxt = anime.timeline({
             loop: false,
             autoplay: false,
-            easing: 'linear',
-            delay: 1000
+            easing: 'linear'
         }).add({
             targets: '#fila-' + slide + ' .txt-puntos i',
             opacity: [0, 1],
@@ -82,7 +83,6 @@ $(document).ready(function () {
                 delay: anime.stagger(200)
             }, '-=200');
 
-
         var animacionConector = anime.timeline({
             loop: false,
             autoplay: false,
@@ -94,6 +94,7 @@ $(document).ready(function () {
                 width: [0, '100%'],
                 duration: 1500,
                 delay: 3000
+                
             })
             .add({
                 targets: '#fila-' + slide + ' .linea',
@@ -151,6 +152,7 @@ $(document).ready(function () {
                 },
                 delay: anime.stagger(200 * 1),
                 complete: animacionConector.play()
+                
             }, '-=500');
 
 
@@ -438,35 +440,29 @@ $(document).ready(function () {
             }
         }
         animCustom();
-        /*animacion.add({
-            targets: ['#fila-1 h1', '#fila-1 small'],
-            translateY: {
-                value: [-20, 0],
-                duration: 800
-            },
-            opacity: {
-                value: [0, 1],
-                duration: 1200
-            },
-            easing: 'linear',
-            delay: function (el, i) {
-                return 1000 + (i * 200);
-            },
-            offset: '-=1000'
-        })
-            .add({
-                targets: '#fila-1 .carrusel',
-                opacity: [0, 1],
-                duration: 2000,
-                easing: 'linear',
-                offset: '-=1000'
-            });*/
-        //Final animacion
-
         animacion.play();
-        animacionTxt.play();
         animacionIlustra.play();
+        animacionTxt.play();
     } //Fin animar Slide
 
+    $(function () {
+        $('[data-toggle="popover"]').popover({
+            html: true,
+            trigger: 'manual',
+            container: '.cont-hotspots',
+            animation: false
+        })
+    });
+    function abrirPop () {
+        $(this).popover('toggle');
+    }
+    
+    $('[data-toggle="popover"]').on('click', function (e) {
+        e.preventDefault();
+    });
+    $('.hotspot').on('click', abrirPop);
+    
+    
+    
     //Fin
 });
