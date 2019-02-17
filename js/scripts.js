@@ -287,24 +287,24 @@ $(document).ready(function () {
                     break;
                 case 5:
                     animacion
-                    .add({
-                        targets: '#fila-5 h2',
-                        translateY: {
-                            value: [20, 0],
-                            duration: 800
-                        },
-                        opacity: {
-                            value: [0, 1],
-                            duration: 2000
-                        }
-                    })
-                    .add({
-                        targets: '#fila-5 .graf',
-                        opacity: {
-                            value: [0, 1],
-                            duration: 1000
-                        }
-                    }, '-=1000')
+                        .add({
+                            targets: '#fila-5 h2',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            }
+                        })
+                        .add({
+                            targets: '#fila-5 .graf',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        }, '-=1000')
                         .add({
                             targets: '#fila-5 .graf .num',
                             opacity: {
@@ -341,83 +341,97 @@ $(document).ready(function () {
                         }, '-=1500');
                     break;
                 case 6:
-                animacion
-                .add({
-                    targets: '#fila-6 .graf',
-                    opacity: {
-                        value: [0, 1],
-                        duration: 1000
-                    }
-                })
-                    .add({
-                        targets: '#fila-6 .graf .num',
-                        opacity: {
-                            value: [0, 1],
-                            duration: 2000
-                        },
-                        innerHTML: {
-                            value: [0, 2],
-                            duration: 2000
-                        },
-                        easing: 'linear',
-                        round: 1
-                    }, '-=500')
-                    .add({
-                        targets: '#fila-6 p',
-                        translateY: {
-                            value: [20, 0],
-                            duration: 800
-                        },
-                        opacity: {
-                            value: [0, 1],
-                            duration: 2000
-                        },
-                        delay: anime.stagger(400)
-                    }, '-=1500')
-                    .add({
-                        targets: '#fila-6 .left-6 .num',
-                        innerHTML: {
-                            value: [0, 12867],
-                            duration: 2000
-                        },
-                        easing: 'linear',
-                        round: 1
-                    }, '-=1500');
+                    animacion
+                        .add({
+                            targets: '#fila-6 .graf',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        })
+                        .add({
+                            targets: '#fila-6 .graf .num',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            innerHTML: {
+                                value: [0, 2],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=500')
+                        .add({
+                            targets: '#fila-6 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            delay: anime.stagger(400)
+                        }, '-=1500')
+                        .add({
+                            targets: '#fila-6 .left-6 .num',
+                            innerHTML: {
+                                value: [0, 12867],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=1500');
                     break;
                 case 7:
-                animacion
-                .add({
-                    targets: '#fila-7 .graf',
-                    opacity: {
-                        value: [0, 1],
-                        duration: 1000
-                    }
-                })
-                    .add({
-                        targets: '#fila-7 .graf .num',
-                        opacity: {
-                            value: [0, 1],
-                            duration: 2000
-                        },
-                        innerHTML: {
-                            value: [0, 2],
-                            duration: 2000
-                        },
-                        easing: 'linear',
-                        round: 1
-                    }, '-=500')
-                    .add({
-                        targets: '#fila-7 p',
-                        translateY: {
-                            value: [20, 0],
-                            duration: 800
-                        },
-                        opacity: {
-                            value: [0, 1],
-                            duration: 2000
-                        },
-                        delay: anime.stagger(400)
-                    }, '-=1500');
+                    animacion
+                        .add({
+                            targets: '#fila-7 .graf',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            }
+                        })
+                        .add({
+                            targets: '#fila-7 .graf .num',
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            innerHTML: {
+                                value: [0, 2],
+                                duration: 2000
+                            },
+                            easing: 'linear',
+                            round: 1
+                        }, '-=500')
+                        .add({
+                            targets: '#fila-7 p',
+                            translateY: {
+                                value: [20, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 2000
+                            },
+                            delay: anime.stagger(400)
+                        }, '-=1500');
+                    break;
+                case 8:
+                    animacion.add({
+                            targets: '#fila-8 .col-6, #fila-8 .recuadro',
+                            translateY: {
+                                value: [60, 0],
+                                duration: 800
+                            },
+                            opacity: {
+                                value: [0, 1],
+                                duration: 1000
+                            },
+                            delay: anime.stagger(600)
+                        });
                     break;
                 default:
                     console.log('Si es el slide 223423');
