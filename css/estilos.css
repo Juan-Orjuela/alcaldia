@@ -2045,7 +2045,150 @@ RESPONSIVE
     #fila-8 .tc-1 {
         display: none
     }
+
     #fila-9 .tc-3 {
-    display: none
+        display: none
+    }
 }
+
+@media screen and (max-width: 576px) {
+    #fullpage .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #fullpage #fila-1 h1 {
+        margin-top: 5rem;
+    }
+
+    #fullpage #fila-1 .carrusel {
+        margin-bottom: 5rem;
+    }
+
+    #fullpage #fila-1 .txt-puntos, #fullpage #fila-1 .txt-cuadros {
+        display: none;
+    }
+
+    #fullpage .graf img {
+        max-width: 100%;
+    }
+
+    #fila-5 .ci-4-5-6 {
+        margin-bottom: 10%;
+    }
+
+    #fila-5 .right-5 {
+        margin-bottom: 3rem;
+    }
+
+    #fila-5 .conector {
+        width: 1px;
+        top: 90%;
+    }
+
+    #fullpage #fila-6 .graf .num {
+        font-size: 2rem;
+    }
+
+    #fullpage #fila-6 .col-md-3 .large {
+        font-size: 1rem;
+    }
+
+    #fullpage #fila-6 .col-md-3 .small {
+        font-size: .8rem;
+    }
+
+    #fullpage #fila-6 .txt-cuadros, #fullpage #fila-7 .txt-cuadros {
+        display: none;
+    }
+
+    #fullpage #fila-7 .graf .num {
+        font-size: 2rem;
+    }
+
+    #fullpage #fila-7 .col-md-3 .large {
+        font-size: 1rem;
+    }
+
+    #fullpage #fila-7 .col-md-3 .small {
+        font-size: .8rem;
+    }
+
+    #fila-7 .txt-puntos.tx-2 {
+        top: 5%;
+        left: 2.2rem;
+        right: initial
+    }
+
+    #fila-8 .col-blanca {
+        margin-top: 10vh;
+    }
+
+    #fila-8 .col-cyan {
+        margin-bottom: 10vh;
+    }
+
+    #fila-8 .conector {
+        top: 95%;
+    }
+
+    #fila-8 .txt-puntos.tx-1 {
+        top: 5%;
+    }
+
+    #fila-8 .txt-puntos.tx-2 {
+        bottom: 5%;
+    }
+
+    #fila-8 .txt-cuadros, #fila-9 .txt-cuadros {
+        display: none;
+    }
+
+    .indicacion {
+        font-size: .8rem;
+    }
+
+    #mapa .hotspot {
+        width: 18px;
+        height: 18px;
+    }
+
+    #fullpage #fila-9 h2 {
+        font-size: 1.6rem;
+    }
+
+    .popover-body {
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        min-width: 190px;
+    }
+
+    .popover-body h4 {
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 0.75rem 0;
+    }
+
+    .popover-body .hnum {
+        display: inline-block;
+        width: 48%;
+        font-weight: 900;
+        float: left;
+        font-size: 1rem;
+        border-right: 1px solid black;
+        margin-right: 4%;
+    }
+
+    .popover-body .hinfo {
+        font-weight: 300;
+        font-size: .6rem;
+        width: 48%;
+        float: left;
+        line-height: 1.1;
+        padding-top: .2em;
+    }
+
+    .popover-body .hnum {
+        margin-bottom: 0.6rem;
+    }
 }
