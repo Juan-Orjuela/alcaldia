@@ -456,7 +456,20 @@ $(document).ready(function () {
         })
     });
     function abrirPop () {
-        $(this).popover('toggle');
+        
+        
+        if ( $(this).hasClass('activo') ) {
+            $(this).popover('toggle');
+            $(this).removeClass('activo');
+            console.log('If cerrrar')
+            
+        } else {
+            $('.hotspot').popover('hide').removeClass('activo');
+            $(this).popover('show').addClass('activo');
+            console.log('Else normal')
+        }
+        
+        
     }
     
     $('[data-toggle="popover"]').on('click', function (e) {

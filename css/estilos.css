@@ -73,17 +73,6 @@ GENERALES
     letter-spacing: 0.05em;
 }
 
-/*
-#fp-nav ul li:nth-child(5) {
-    height: 20px;
-}
-
-#fp-nav ul li:nth-child(5) a span {
-    height: 20px !important;
-    top: 2px !important;
-    margin-top: -2px!important
-}
-*/
 .ilustracion {
     position: relative;
 }
@@ -200,7 +189,17 @@ GENERALES
     position: relative;
     z-index: 2;
 }
+.lugar {
+    position: absolute;
+    font-weight: 500;
+    color: white;
+    line-height: 1.8;
+}
+.lugar .resal {
+    background: #00dad9;
+    padding: 0.2em 0.5em;
 
+}
 /*
 ============
 Textura de puntos
@@ -362,7 +361,10 @@ Fila 2
     width: 90%;
     margin-left: 10%;
 }
-
+#fila-2 .lugar{
+    bottom: 12%;
+    left: 0;
+}
 /*
 ============
 Fila 3
@@ -468,7 +470,10 @@ Fila 3
     bottom: 10%;
     left: 40%;
 }
-
+#fila-3 .lugar{
+    bottom: 12%;
+    left: 0;
+}
 /*
 ============
 Fila 4
@@ -545,7 +550,10 @@ Fila 4
     bottom: 10%;
     left: 60%;
 }
-
+#fila-4 .lugar{
+    bottom: 12%;
+    left: 0;
+}
 /*
 ============
 Fila 5
@@ -690,7 +698,11 @@ Fila 5
     transform: rotate(-10deg);
     transform-origin: 10% 50%;
 }
-
+#fila-5 .lugar{
+    top: -8%;
+    right: 0;
+    text-align: right;
+}
 /*
 ============
 Fila 6
@@ -793,7 +805,10 @@ Fila 6
     bottom: 10%;
     left: 50%;
 }
-
+#fila-6 .lugar{
+    bottom: 12%;
+    left: 0;
+}
 /*
 ============
 Fila 7
@@ -912,7 +927,11 @@ Fila 7
     bottom: 8%;
     right: 10%;
 }
-
+#fila-7 .lugar{
+    top: -2%;
+    left: 0;
+    z-index: 5
+}
 /*
 ============
 Fila 8
