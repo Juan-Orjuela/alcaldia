@@ -4,12 +4,25 @@ $(document).ready(function () {
         anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion-tunal', 'construccion-fontanar', 'construccion-sancristobal', 'construccion-restantes', 'ubicacion', 'footer'],
         sectionsColor: ['#EDEDED', '#EDEDED', '#EDEDED', '#EDEDED', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#EDEDED'],
         navigation: true,
+        autoScrolling:false,
         responsiveWidth: 768,
 		responsiveHeight: 490,
         navigationPosition: 'right',
         navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Avances Tunal', 'Avances Fontanar del Río', 'Avances San Cristobal', 'Próximas licitaciones', 'Ubicación', 'Cierre'],
         afterLoad: function (anchorLink, index) {
             animarSlide(index);
+        },
+        onLeave: function(origin, destination, direction){
+            var leavingSection = this;
+            console.log(origin);
+            //después de abandonar la sección 2
+            if(origin.index == 1 && direction =='down'){
+                console.log("Me estoy moviendo a la sección 3!");
+            }
+    
+            else if(origin.index == 1 && direction == 'up'){
+                console.log("Me estoy moviendo a la sección 1!");
+            }
         }
 
     });
@@ -113,7 +126,7 @@ $(document).ready(function () {
             autoplay: false,
             easing: 'linear'
         })
-            .add({
+            /*.add({
                 targets: '#fila-' + slide + ' .piso',
                 translateY: {
                     value: [-200, 0],
@@ -124,7 +137,7 @@ $(document).ready(function () {
                     value: [0, 1],
                     duration: 200
                 }
-            })
+            })*/
             .add({
                 targets: '#fila-' + slide + ' .pared',
                 translateY: {

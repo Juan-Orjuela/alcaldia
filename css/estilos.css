@@ -189,17 +189,19 @@ GENERALES
     position: relative;
     z-index: 2;
 }
+
 .lugar {
     position: absolute;
     font-weight: 500;
     color: white;
     line-height: 1.8;
 }
+
 .lugar .resal {
     background: #00dad9;
     padding: 0.2em 0.5em;
-
 }
+
 /*
 ============
 Textura de puntos
@@ -361,10 +363,12 @@ Fila 2
     width: 90%;
     margin-left: 10%;
 }
-#fila-2 .lugar{
+
+#fila-2 .lugar {
     bottom: 12%;
     left: 0;
 }
+
 /*
 ============
 Fila 3
@@ -470,10 +474,12 @@ Fila 3
     bottom: 10%;
     left: 40%;
 }
-#fila-3 .lugar{
+
+#fila-3 .lugar {
     bottom: 12%;
     left: 0;
 }
+
 /*
 ============
 Fila 4
@@ -550,10 +556,12 @@ Fila 4
     bottom: 10%;
     left: 60%;
 }
-#fila-4 .lugar{
+
+#fila-4 .lugar {
     bottom: 12%;
     left: 0;
 }
+
 /*
 ============
 Fila 5
@@ -698,11 +706,13 @@ Fila 5
     transform: rotate(-10deg);
     transform-origin: 10% 50%;
 }
-#fila-5 .lugar{
+
+#fila-5 .lugar {
     top: -8%;
     right: 0;
     text-align: right;
 }
+
 /*
 ============
 Fila 6
@@ -805,10 +815,12 @@ Fila 6
     bottom: 10%;
     left: 50%;
 }
-#fila-6 .lugar{
+
+#fila-6 .lugar {
     bottom: 12%;
     left: 0;
 }
+
 /*
 ============
 Fila 7
@@ -927,11 +939,13 @@ Fila 7
     bottom: 8%;
     right: 10%;
 }
-#fila-7 .lugar{
+
+#fila-7 .lugar {
     top: -2%;
     left: 0;
     z-index: 5
 }
+
 /*
 ============
 Fila 8
@@ -1223,25 +1237,6 @@ Fila 9
 #fila-9 .tc-3 {
     bottom: 10%;
     right: 15%;
-}
-
-/*Controlar salto de animacion*/
-.section .container, .section .txt-puntos, .section .txt-cuadros {
-    opacity: 0;
-    transition: opacity 500ms 1000ms;
-}
-
-.section .txt-cuadros {
-    background: transparent;
-    transition: opacity 500ms 1000ms;
-}
-
-.section.active .txt-cuadros {
-    background: #ffffff;
-}
-
-.section.active .container, .section.active .txt-puntos, .section.active .txt-cuadros {
-    opacity: 1;
 }
 
 /*
@@ -2211,3 +2206,38 @@ RESPONSIVE
         margin-bottom: 0.6rem;
     }
 }
+
+/*Controlar salto de animacion*/
+/*.section h2, .section .txt-puntos, .section .txt-cuadros, .section h1, .section p, .section .pared, .section .pared, .section .elem, .section .animacion, .section .lugar {
+    opacity: 0 !important;
+    transition: opacity 500ms linear;
+}
+*/
+.section .container {
+   opacity: 0 ;
+   transition: opacity 500ms linear; 
+}
+.section.active .container {
+   opacity: 1;
+}
+.section .txt-cuadros {
+    background: transparent;
+    transition: opacity 500ms 1000ms;
+}
+
+.section.active .txt-cuadros {
+    background: #ffffff;
+}
+/*
+.section.active h2, 
+.section.active .txt-puntos, 
+.section.active .txt-cuadros, 
+.section.active h1, 
+.section.active p, 
+.section.active .pared, 
+.section.active .pared, 
+.section.active .elem, 
+.section.active .animacion, 
+.section.active .lugar {
+    opacity: 1 !important;
+}*/
