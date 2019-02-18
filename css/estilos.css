@@ -1629,18 +1629,6 @@ RESPONSIVE
         width: 75%;
     }
 
-    #fila-6 .col-md-9 {
-        -ms-flex: 0 0 66%;
-        flex: 0 0 66%;
-        max-width: 66%;
-    }
-
-    #fila-6 .col-md-3 {
-        -ms-flex: 0 0 33%;
-        flex: 0 0 33%;
-        max-width: 33%;
-    }
-
     #fila-6 .left-6 .num {
         line-height: 0.3;
         font-size: 2.2rem;
@@ -1673,18 +1661,6 @@ RESPONSIVE
 
     #fila-6 .tc-1 {
         display: none;
-    }
-
-    #fila-7 .col-md-9 {
-        -ms-flex: 0 0 66%;
-        flex: 0 0 66%;
-        max-width: 66%;
-    }
-
-    #fila-7 .col-md-3 {
-        -ms-flex: 0 0 33%;
-        flex: 0 0 33%;
-        max-width: 33%;
     }
 
     #fila-7 .graf img {
@@ -1755,4 +1731,321 @@ RESPONSIVE
     #fila-9 #mapa-cont {
         max-width: 450px;
     }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #fila-6 .col-md-9 {
+        -ms-flex: 0 0 66%;
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+
+    #fila-6 .col-md-3 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    #fila-7 .col-md-9 {
+        -ms-flex: 0 0 66%;
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+
+    #fila-7 .col-md-3 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #fullpage #fila-1 h1 {
+        margin-top: 3rem;
+    }
+
+    #fila-1 .bajar {
+        left: initial;
+        right: 2rem;
+    }
+
+    #fullpage .container {
+        margin-top: 0 !important;
+    }
+
+    #fila-2 {
+        background-color: #dadada !important;
+    }
+
+    #fila-2 .cont-ilustracion {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #fila-2 .txt-puntos {
+        top: initial;
+        left: 65%;
+        bottom: 3%;
+    }
+
+    #fila-2 .conector {
+        width: 1px;
+        top: 90%;
+        left: 50%;
+        height: 18vh;
+    }
+
+    #fila-2 .tc-3 {
+        bottom: 10%;
+        right: initial;
+        left: 10%
+    }
+
+    .conector .fin {
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+    }
+
+    #fila-2 .conector .fin, #fila-3 .conector-2 .fin, #fila-4 .conector .fin, #fila-5 .conector .fin, #fila-6 .conector .fin, #fila-8 .conector .fin {
+        right: -5px;
+    }
+
+    #fila-3 .conector-1 {
+        display: none
+    }
+
+    #fila-3 .cont-ilustraciones {
+        margin-top: 5vh;
+    }
+
+    #fila-3 .conector-2 {
+        width: 1px;
+        top: 80vh;
+        left: 50%;
+        height: 28vh;
+    }
+
+    #fila-3 .tc-3 {
+        bottom: 5%;
+        left: 5%;
+    }
+
+    #fila-4 {
+        background-color: #dadada !important;
+    }
+
+    #fila-4 .cont-ilustracion {
+        max-width: 40ppx;
+        margin: 0 auto;
+        position: relative;
+        right: initial;
+    }
+
+    #fila-4 .conector {
+        top: 90vh;
+        height: 15vh;
+    }
+
+    #fullpage .graf img {
+        max-width: 200px;
+    }
+
+    #fila-5 h2 {
+        padding: 2rem 0;
+    }
+
+    #fila-5 .graf {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #fila-5 .col-md-3 .large {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: initial;
+        align-self: center;
+    }
+
+    #fila-5 .graf {
+        margin-top: 0;
+    }
+
+    #fila-5 .col-md-3 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    #fila-5 .ci-4-5-6 {
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    #fila-5 .diagonal::before {
+        content: '';
+        width: 400%;
+        position: absolute;
+        background: #ededed;
+        left: -50%;
+        top: -10%;
+        bottom: 2%;
+        transform: rotate(-10deg);
+        transform-origin: 10% 50%;
+        display: none;
+    }
+
+    #fila-5 .conector {
+        width: 1px;
+        top: 90vh;
+        left: 25%;
+        height: 20vh;
+    }
+
+    #fila-6 {
+        background-color: rgb(188, 196, 199) !important;
+    }
+
+    #fila-6 .ci-7-8-9 {
+        width: 100%;
+        position: relative;
+    }
+
+    #fila-6 .col-md-3 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    #fila-6 .graf {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #fila-6 .col-md-3 > .large {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: initial;
+        align-self: center;
+    }
+
+    #fila-6 .col-md-3 > .left-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: initial;
+        align-self: center;
+        text-align: center;
+        margin-top: 0
+    }
+
+    #fila-6 .txt-puntos.tx-1 {
+        bottom: initial;
+        top: 10%;
+        display: initial;
+    }
+
+    #fila-6 .txt-puntos.tx-2 {
+        bottom: 10%;
+        left: 1.2rem;
+    }
+
+    #fila-6 .tc-2 {
+        bottom: 10%;
+        left: 90%;
+    }
+
+    #fila-6 .conector {
+        width: 1px;
+        top: 80vh;
+        left: 85vw;
+        height: 30vh;
+    }
+
+    #fila-7 .col-md-3 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    #fila-7 .graf {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #fila-7 .col-md-3 > .large {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: initial;
+        align-self: center;
+    }
+
+    #fila-7 .col-md-3 > .small {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: initial;
+        align-self: center;
+        text-align: center;
+        margin-top: 0
+    }
+
+    #fila-7 .ci-11-12-13-14 {
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30%
+    }
+
+    #fila-7 .conector {
+        width: 1px;
+        right: 50vw;
+        top: 90vh;
+        height: 20vh;
+    }
+
+    #fila-3 .conector-1 .fin, #fila-7 .conector .fin {
+        left: -5px;
+    }
+
+    #fila-7 .tc-3 {
+        bottom: 5%;
+        right: 10%;
+    }
+
+    #fila-7 .txt-puntos.tx-1 {
+        top: 90%;
+        left: 2.2rem;
+    }
+
+    #fila-8 {
+        background-color: rgb(188, 196, 199) !important;
+        border-bottom: 1px solid white;
+    }
+
+    #fila-8 .col-md-6 {
+        padding: 12%;
+    }
+
+    #fila-8 .col-blanca {
+        border: none;
+        text-align: center;
+    }
+
+    #fila-8 .tc-1 {
+        display: none
+    }
+    #fila-9 .tc-3 {
+    display: none
+}
 }
