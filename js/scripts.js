@@ -150,7 +150,7 @@ $(document).ready(function () {
                     duration: 200
                 },
                 delay: anime.stagger(500)
-            }, '-=1000')
+            })
             .add({
                 targets: '#fila-' + slide + ' .elem',
                 opacity: {
