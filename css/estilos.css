@@ -95,6 +95,7 @@ GENERALES
 
 .conector {
     position: absolute;
+    z-index: 5;
 }
 
 .conector .linea {
@@ -110,6 +111,7 @@ GENERALES
     display: block;
     position: absolute;
     border-radius: 100%;
+    opacity: 0;
 }
 
 .animacion {
@@ -307,12 +309,10 @@ Fila 2
 }
 
 #fila-2 .conector {
-    width: 50%;
-    top: 50%;
-    left: 0;
-    height: 46vh;
-    z-index: 5;
-    margin-left: 10%;
+    width: 20%;
+    top: 60vh;
+    left: 55vw;
+    height: 45vh;
 }
 
 #fila-2 .conector .linea {
@@ -406,12 +406,10 @@ Fila 3
 }
 
 #fila-3 .conector-1 {
-    width: 45%;
-    top: 20%;
-    right: -10%;
-    height: 100%;
-    z-index: 5;
-    margin-left: 10%;
+    width: 20vw;
+    top: 20vh;
+    right: 45vw;
+    height: 20vh;
 }
 
 #fila-3 .conector-1 .linea {
@@ -427,12 +425,10 @@ Fila 3
 }
 
 #fila-3 .conector-2 {
-    width: 10%;
-    top: 75%;
-    right: 5%;
+    width: 12vw;
+    top: 65vh;
+    left: 75vw;
     height: 55vh;
-    z-index: 5;
-    margin-left: 10%;
 }
 
 #fila-3 .conector-2 .linea {
@@ -507,10 +503,9 @@ Fila 4
 
 #fila-4 .conector {
     width: 1px;
-    top: 55%;
-    left: 40%;
+    top: 52vh;
+    left: 25vw;
     height: 55vh;
-    z-index: 5;
 }
 
 #fila-4 .conector .linea {
@@ -636,10 +631,9 @@ Fila 5
 
 #fila-5 .conector {
     width: 1px;
-    top: 75%;
-    left: 20%;
+    top: 65vh;
+    left: 35vw;
     height: 50vh;
-    z-index: 5;
 }
 
 #fila-5 .conector .linea {
@@ -667,7 +661,6 @@ Fila 5
 #fila-5 .tc-1 {
     top: 10%;
     left: 10%;
-    
 }
 
 #fila-5 .diagonal {
@@ -747,11 +740,10 @@ Fila 6
 }
 
 #fila-6 .conector {
-    width: 15%;
-    top: 75%;
-    right: 10%;
-    height: 45vh;
-    z-index: 5;
+    width: 15vw;
+    top: 75vh;
+    left: 50vw;
+    height: 38vh;
 }
 
 #fila-6 .conector .linea {
@@ -779,19 +771,16 @@ Fila 6
 #fila-6 .tc-1 {
     top: 10%;
     left: 20%;
-    
 }
 
 #fila-6 .tc-2 {
     bottom: 10%;
     left: 20%;
-    
 }
 
 #fila-6 .tc-3 {
     bottom: 10%;
     left: 50%;
-    
 }
 
 /*
@@ -869,11 +858,10 @@ Fila 7
 }
 
 #fila-7 .conector {
-    width: 25%;
-    top: 95%;
-    right: 65%;
-    height: 35vh;
-    z-index: 5;
+    width: 15vw;
+    top: 75vh;
+    right: 48vw;
+    height: 32vh;
 }
 
 #fila-7 .conector .linea {
@@ -901,19 +889,16 @@ Fila 7
 #fila-7 .tc-1 {
     top: 10%;
     right: 20%;
-    
 }
 
 #fila-7 .tc-2 {
     bottom: 10%;
     left: 10%;
-    
 }
 
 #fila-7 .tc-3 {
     bottom: 10%;
     right: 10%;
-    
 }
 
 /*
@@ -995,10 +980,9 @@ Fila 8
 
 #fila-8 .conector {
     width: 1px;
-    top: 110%;
-    right: -1px;
-    height: 17vh;
-    z-index: 5;
+    top: 90vh;
+    left: 50vw;
+    height: 13vh;
 }
 
 #fila-8 .conector .linea {
@@ -1026,13 +1010,11 @@ Fila 8
 #fila-8 .tc-1 {
     top: 10%;
     right: 25%;
-    
 }
 
 #fila-8 .tc-2 {
     bottom: 10%;
     left: 10%;
-    
 }
 
 #fila-8 .tc-3 {
@@ -1176,6 +1158,7 @@ Fila 9
     top: 19%;
     left: 40%;
 }
+
 #fila-9 .txt-puntos.tx-1 {
     top: 10%;
     left: 2.2rem;
@@ -1185,39 +1168,234 @@ Fila 9
     bottom: 10%;
     right: 2.2rem;
 }
+
 #fila-9 .txt-puntos.tx-3 {
     bottom: 10%;
     left: 2.2rem;
 }
+
 #fila-9 .txt-puntos.tx-4 {
     bottom: 50%;
     right: 15%;
 }
+
 #fila-9 .tc-1 {
     top: 10%;
     right: 15%;
 }
+
 #fila-9 .tc-2 {
     bottom: 50%;
     left: 5%;
 }
+
 #fila-9 .tc-3 {
     bottom: 10%;
     right: 15%;
 }
+
 /*Controlar salto de animacion*/
 .section .container, .section .txt-puntos, .section .txt-cuadros {
     opacity: 0;
     transition: opacity 500ms 1000ms;
 }
+
 .section .txt-cuadros {
     background: transparent;
     transition: opacity 500ms 1000ms;
 }
+
 .section.active .txt-cuadros {
     background: #a0a0a0;
 }
 
 .section.active .container, .section.active .txt-puntos, .section.active .txt-cuadros {
     opacity: 1;
+}
+
+/*
+============
+RESPONSIVE
+============
+*/
+@media screen and (max-width: 1260px) {
+    #fullpage {
+        margin-top: 2.2rem;
+    }
+
+    #fila-2 .cont-ilustracion {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    #fila-3 .ci-2-3 {
+        margin-top: 1rem;
+    }
+
+    #fila-3 .cont-ilustracion {
+        max-width: 390px;
+    }
+
+    #fila-4 .cont-ilustracion {
+        max-width: 450px;
+    }
+
+    #fila-5 .graf {
+        margin-top: 2rem;
+    }
+
+    #fila-9 #mapa-cont {
+        margin: 1rem auto 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /*Ajuste de textos*/ #fullpage h1 {
+        font-size: 4rem;
+    }
+
+    #fullpage h1 small {
+        font-size: 2.8rem;
+    }
+
+    #fullpage h2 {
+        font-size: 2.8rem;
+    }
+
+    #fullpage .num {
+        font-size: 3rem;
+    }
+
+    .uni {
+        font-size: 1.8rem;
+    }
+
+    #fullpage .large {
+        font-size: 1.1rem;
+    }
+
+    #fila-1 .txt-puntos {
+        bottom: 12%;
+        left: 20%;
+    }
+
+    /*Ajuste elementos*/
+    #fullpage:before {
+        height: 1rem;
+    }
+
+    #fullpage .s-semana:before, #fullpage .s-semana:after {
+        width: 1rem;
+    }
+
+    #fila-1 .bajar {
+        width: 40px;
+        height: 40px;
+        bottom: 5rem;
+        margin-left: -20px;
+    }
+
+    #fila-2 .cont-ilustracion {
+        margin-top: -1.5rem;
+    }
+
+    #fila-3 .conector-1 {
+        height: 15vh;
+    }
+
+    #fila-3 .conector-2 {
+        width: 10vw;
+        left: 80vw;
+    }
+
+    #fila-3 .cont-ilustracion {
+        max-width: 360px;
+    }
+
+    #fila-4 .num-wrapper .uni {
+        margin-left: 2.3rem;
+        margin-top: .7rem;
+    }
+
+    #fila-4 .large {
+        margin-left: 2.3rem;
+        max-width: 300px;
+    }
+
+    #fila-4 .cont-ilustracion {
+        max-width: 400px;
+        position: relative;
+        right: 10%;
+    }
+
+    #fila-4 br {
+        display: none;
+    }
+
+    #fila-5 .ci-4-5-6 {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    #fila-5 .ci-6 {
+        position: absolute;
+        right: 22.5%;
+        left: initial;
+        top: 3.8%;
+        width: 45%;
+    }
+
+    #fila-6 .ci-7-8-9 {
+        width: 90%;
+    }
+
+    #fila-6 .ci-9 {
+        position: absolute;
+        left: 15%;
+        top: 47%;
+        width: 50%;
+        max-width: initial;
+    }
+
+    #fila-7 .ci-11-12-13-14 {
+        margin-top: -3.5rem;
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    #fila-7 .ci-11, #fila-7 .ci-13 {
+        width: 50%;
+        max-width: initial;
+    }
+
+    #fila-7 .ci-12 {
+        right: 23.3%;
+        top: 38.5%;
+        width: 49%;
+        max-width: initial;
+    }
+
+    #fila-7 .ci-14 {
+        position: absolute;
+        right: 2.8%;
+        top: 30.9%;
+        width: 49%;
+        max-width: initial;
+    }
+    #fila-8 .conector {
+    top: 87vh;
+}
+#fila-9 #mapa-cont {
+    max-width: 600px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    /*Ajuste plantilla Semana*/ .especial-site-navbar a img.logo-img {
+        max-height: 80%;
+    }
+
+    #fullpage {
+        margin-top: 3.7rem;
+    }
 }
