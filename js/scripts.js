@@ -4,6 +4,8 @@ $(document).ready(function () {
         anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion-tunal', 'construccion-fontanar', 'construccion-sancristobal', 'construccion-restantes', 'ubicacion', 'footer'],
         sectionsColor: ['#EDEDED', '#EDEDED', '#EDEDED', '#EDEDED', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#EDEDED'],
         navigation: true,
+        responsiveWidth: 768,
+		responsiveHeight: 490,
         navigationPosition: 'right',
         navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Avances Tunal', 'Avances Fontanar del Río', 'Avances San Cristobal', 'Próximas licitaciones', 'Ubicación', 'Cierre'],
         afterLoad: function (anchorLink, index) {
@@ -423,7 +425,7 @@ $(document).ready(function () {
                     break;
                 case 8:
                     animacion.add({
-                            targets: '#fila-8 .col-6, #fila-8 .recuadro',
+                            targets: '#fila-8 .col-md-6, #fila-8 .recuadro',
                             translateY: {
                                 value: [60, 0],
                                 duration: 800
