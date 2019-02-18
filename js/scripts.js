@@ -448,25 +448,26 @@ $(document).ready(function () {
     } //Fin animar Slide
 
     $(function () {
-        $('[data-toggle="popover"]').popover({
+        $('.hotspot').popover({
             html: true,
-            trigger: 'manual',
+            trigger: 'focus',
             container: '.cont-hotspots',
             animation: false
         })
     });
+    
     function abrirPop () {
         
         
         if ( $(this).hasClass('activo') ) {
-            $(this).popover('toggle');
+            $(this).blur();
             $(this).removeClass('activo');
-            console.log('If cerrrar')
+            
             
         } else {
-            $('.hotspot').popover('hide').removeClass('activo');
-            $(this).popover('show').addClass('activo');
-            console.log('Else normal')
+            $('.hotspot').removeClass('activo');
+            $(this).addClass('activo');
+            
         }
         
         
