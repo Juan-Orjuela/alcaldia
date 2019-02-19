@@ -109,7 +109,7 @@ $(document).ready(function () {
                 delay: anime.stagger(200)
             }, '-=200');
 
-        //Aniamcion conectores
+        //Animacion conectores
         var animacionConector = anime.timeline({
             loop: false,
             autoplay: false,
@@ -119,7 +119,7 @@ $(document).ready(function () {
                 targets: '#fila-' + slide + ' .linea',
                 width: [0, '100%'],
                 duration: 1000,
-                delay: 500
+                delay: 1500
             })
             .add({
                 targets: '#fila-' + slide + ' .linea',
@@ -142,7 +142,7 @@ $(document).ready(function () {
                 targets: '#fila-' + slide + ' .piso',
                 opacity: [0, 1],
                 duration: 300,
-                delay: anime.stagger(200)
+                delay: anime.stagger(200, {start: 1500})
             })
             .add({
                 targets: '#fila-' + slide + ' .pared',
