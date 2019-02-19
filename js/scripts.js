@@ -15,13 +15,7 @@ $(document).ready(function () {
                 animarSlide(1);
                 iniciar++;
             }
-            else if (index != 1 & iniciar == 0) {
-                //console.log('Apareci en '+index);
-                iniciar++;
-                for(var i = 1; i < index; i++) {
-                    $('#fila-' + i).addClass('animate');
-                }
-            }
+            
         },
         onLeave: function (index, nextIndex, direction) {
             //console.log('Estoy en ' + index + ' Voy a ' + nextIndex + ' scrollando hacia ' + direction);

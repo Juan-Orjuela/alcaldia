@@ -2332,3 +2332,7 @@ RESPONSIVE
 #fila-1 .container {
     opacity: 1;
 }
+footer {
+    height: initial;
+    min-height: 310px;
+}
