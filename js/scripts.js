@@ -24,6 +24,14 @@ $(document).ready(function () {
                 $('#fila-' + nextIndex).addClass('animate');
             } else if (direction == 'up') {
                 $('#fila-' + index).removeClass('animate');
+            } 
+            
+            if (index != 1 & iniciar == 0) {
+                console.log('Apareci en '+index);
+                iniciar++;
+                for(var i = 1; i < index; i++) {
+                    $('#fila-' + i).addClass('animate');
+                }
             }
         }
 
