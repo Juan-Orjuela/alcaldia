@@ -191,7 +191,7 @@ $(document).ready(function () {
                 value: [0, 1],
                 duration: 800
             },
-            delay: anime.stagger(200, {start: 800})
+            delay: anime.stagger(200, {start: 2000})
         }).add({
             targets: '#fila-' + slide + ' .lugar.der',
             translateX: {
