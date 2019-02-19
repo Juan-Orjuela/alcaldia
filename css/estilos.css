@@ -319,7 +319,7 @@ Fila 2
     width: 100%;
     max-width: 280px;
     top: 50%;
-    right:0;
+    right: 0;
     transform: translateX(100%);
     height: 45vh;
 }
@@ -421,7 +421,7 @@ Fila 3
 
 #fila-3 .conector-1 {
     width: 40%;
-    top:50%;
+    top: 50%;
     left: 0;
     bottom: -5%;
     transform: translateX(-65%);
@@ -483,19 +483,21 @@ Fila 3
     bottom: 2%;
     left: 0;
 }
+
 #fila-3 .lugar.lugar-2 {
     bottom: -5%;
     bottom: calc(2% - 1.9em);
     left: 0;
 }
+
 /*
 ============
 Fila 4
 ============
 */
 #fila-4 .col-md-6 {
-    
 }
+
 #fila-4 .num-wrapper {
     position: relative;
 }
@@ -668,7 +670,7 @@ Fila 5
     width: 25%;
     top: 67%;
     left: 0;
-    height: 50vh;
+    height: 45vh;
     transform: translateX(-100%);
 }
 
@@ -724,14 +726,17 @@ Fila 5
     top: 75%;
     left: 0;
 }
+
 #fila-5 .lugar-2 {
     top: 7%;
     right: 0;
 }
+
 #fila-5 .lugar-3 {
     bottom: 8%;
     left: 0;
 }
+
 /*
 ============
 Fila 6
@@ -796,7 +801,6 @@ Fila 6
     top: 70%;
     right: -30%;
     height: 42vh;
-    
 }
 
 #fila-6 .conector .linea {
@@ -909,9 +913,11 @@ Fila 7
 #fila-7 #il-14 .animacion {
     background-image: url('../imgs/ilustracion-14/animacion/sprite.png')
 }
+
 #fila-7 .large {
     text-align: center;
 }
+
 #fila-7 .small {
     line-height: 1.3;
     font-weight: 500;
@@ -924,7 +930,7 @@ Fila 7
     top: 58%;
     left: 0;
     transform: translateX(-100%);
-    height: 48vh;
+    height: 68vh;
 }
 
 #fila-7 .conector .linea {
@@ -968,15 +974,18 @@ Fila 7
     top: 13%;
     left: 0;
 }
+
 #fila-7 .lugar-2 {
     top: 13%;
     right: 0;
 }
+
 #fila-7 .lugar-3 {
     bottom: -25%;
     left: 43%;
     z-index: 5;
 }
+
 /*
 ============
 Fila 8
@@ -1388,16 +1397,19 @@ RESPONSIVE
     #fila-5 .ci-6 {
         right: 29%;
     }
+
     #fila-6 .graf {
         margin-top: -2rem;
     }
+
     #fila-6 .ci-7-8-9 {
         width: 90%;
         position: relative;
+        margin-bottom: 20%;
     }
 
     #fila-7 .ci-11-12-13-14 {
-        margin-top: -3.5rem;
+        margin-top: -2rem;
         width: 85%;
         margin-left: 15%;
     }
@@ -1435,8 +1447,6 @@ RESPONSIVE
         max-width: initial;
     }
 
-    
-
     #fila-9 #mapa-cont {
         max-width: 600px;
     }
@@ -1451,7 +1461,6 @@ RESPONSIVE
         margin-top: 0;
     }
 }
-
 
 @media screen and (max-width: 992px) {
     .txt-cuadros {
@@ -1524,22 +1533,8 @@ RESPONSIVE
         top: 8%;
     }
 
-    #fila-2 .conector {
-        width: 20%;
-        top: 60vh;
-        left: 55vw;
-        height: 38vh;
-    }
-
     #fullpage #fila-2 .container {
         margin-top: 3rem;
-    }
-
-    #fila-2 .conector {
-        width: 20%;
-        top: 70vh;
-        left: 55vw;
-        height: 38vh;
     }
 
     #fila-2 .txt-puntos {
@@ -1556,12 +1551,6 @@ RESPONSIVE
         margin: 0 auto;
     }
 
-    #fila-3 .conector-1 {
-        width: 10vw;
-        top: 25vh;
-        height: 20vh;
-    }
-
     #fila-3 .tc-1 {
         top: 50%;
         left: 5%;
@@ -1576,12 +1565,6 @@ RESPONSIVE
         top: initial;
         right: 5%;
         bottom: 5%;
-    }
-
-    #fila-3 .conector-2 {
-        width: 1px;
-        left: initial;
-        right: 10%
     }
 
     #fullpage #fila-4 .container {
@@ -1612,11 +1595,6 @@ RESPONSIVE
         top: initial;
         left: 90%;
         bottom: 5%;
-    }
-
-    #fila-4 .conector {
-        top: 62vh;
-        height: 55vh;
     }
 
     #fullpage #fila-5 .container {
@@ -1678,13 +1656,6 @@ RESPONSIVE
         display: none;
     }
 
-    #fila-6 .conector {
-        width: 10vw;
-        top: 75vh;
-        left: 45vw;
-        height: 38vh;
-    }
-
     #fila-6 .tc-1 {
         display: none;
     }
@@ -1719,11 +1690,6 @@ RESPONSIVE
         left: 2rem;
     }
 
-    #fila-7 .conector {
-        width: 10vw;
-        right: 53vw;
-    }
-
     #fullpage #fila-8 .container {
         margin-top: 4rem;
     }
@@ -1742,10 +1708,6 @@ RESPONSIVE
         font-size: 1.05rem;
     }
 
-    #fila-8 .conector {
-        top: 92vh;
-    }
-
     #fullpage #fila-9 .container {
         margin-top: 4rem;
     }
@@ -1756,6 +1718,51 @@ RESPONSIVE
 
     #fila-9 #mapa-cont {
         max-width: 450px;
+    }
+
+    /*lugares hasta 992*/
+    .lugar {
+        font-size: .8rem;
+    }
+
+    #fila-5 .lugar-1 {
+        top: 3%;
+        right: 0;
+        left: initial
+    }
+
+    /*conectores hasta 992*/
+    #fila-2 .conector {
+        width: 75%;
+    }
+
+    #fila-3 .conector-1 {
+        width: 20%;
+        bottom: -5%;
+        transform: translateX(-50%);
+    }
+
+    #fila-3 .conector-2 {
+        width: 10%;
+        height: 65vh;
+    }
+
+    #fila-5 .conector {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation:landscape) {
+    #fila-3 .conector-2 {
+        height: 65vh;
+    }
+
+    #fila-5 .conector {
+        height: 65vh;
+    }
+
+    #fila-6 .conector {
+        height: 62vh;
     }
 }
 
@@ -1814,42 +1821,14 @@ RESPONSIVE
         bottom: 3%;
     }
 
-    #fila-2 .conector {
-        width: 1px;
-        top: 90%;
-        left: 50%;
-        height: 18vh;
-    }
-
     #fila-2 .tc-3 {
         bottom: 10%;
         right: initial;
         left: 10%
     }
 
-    .conector .fin {
-        width: 10px;
-        height: 10px;
-        bottom: -5px;
-    }
-
-    #fila-2 .conector .fin, #fila-3 .conector-2 .fin, #fila-4 .conector .fin, #fila-5 .conector .fin, #fila-6 .conector .fin, #fila-8 .conector .fin {
-        right: -5px;
-    }
-
-    #fila-3 .conector-1 {
-        display: none
-    }
-
     #fila-3 .cont-ilustraciones {
         margin-top: 5vh;
-    }
-
-    #fila-3 .conector-2 {
-        width: 1px;
-        top: 80vh;
-        left: 50%;
-        height: 28vh;
     }
 
     #fila-3 .tc-3 {
@@ -1866,11 +1845,6 @@ RESPONSIVE
         margin: 0 auto;
         position: relative;
         right: initial;
-    }
-
-    #fila-4 .conector {
-        top: 90vh;
-        height: 15vh;
     }
 
     #fullpage .graf img {
@@ -1923,13 +1897,6 @@ RESPONSIVE
         transform: rotate(-10deg);
         transform-origin: 10% 50%;
         display: none;
-    }
-
-    #fila-5 .conector {
-        width: 1px;
-        top: 90vh;
-        left: 25%;
-        height: 20vh;
     }
 
     #fila-6 {
@@ -1988,13 +1955,6 @@ RESPONSIVE
         left: 90%;
     }
 
-    #fila-6 .conector {
-        width: 1px;
-        top: 80vh;
-        left: 85vw;
-        height: 30vh;
-    }
-
     #fila-7 .col-md-3 {
         display: -ms-flexbox;
         display: flex;
@@ -2033,17 +1993,6 @@ RESPONSIVE
         margin-bottom: 30%
     }
 
-    #fila-7 .conector {
-        width: 1px;
-        right: 50vw;
-        top: 90vh;
-        height: 20vh;
-    }
-
-    #fila-3 .conector-1 .fin, #fila-7 .conector .fin {
-        left: -5px;
-    }
-
     #fila-7 .tc-3 {
         bottom: 5%;
         right: 10%;
@@ -2052,6 +2001,15 @@ RESPONSIVE
     #fila-7 .txt-puntos.tx-1 {
         top: 90%;
         left: 2.2rem;
+    }
+
+    #fila-7 .large {
+        text-align: left;
+    }
+
+    #fila-7 .tc-1 {
+        top: 25%;
+        right: 5%;
     }
 
     #fila-8 {
@@ -2072,8 +2030,75 @@ RESPONSIVE
         display: none
     }
 
+    #fila-8 .tc-2, #fila-8 .tc-3 {
+        bottom: 5%;
+    }
+
     #fila-9 .tc-3 {
         display: none
+    }
+
+    /*Secciones responsive*/
+    .fp-auto-height-responsive {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    /*Conectares hasta 768*/
+    /*Escalar conectores*/
+    .conector .fin {
+        width: 10px;
+        height: 10px;
+        bottom: -5px;
+    }
+
+    #fila-2 .conector .fin, #fila-3 .conector-2 .fin, #fila-4 .conector .fin, #fila-5 .conector .fin, #fila-6 .conector .fin, #fila-8 .conector .fin {
+        right: -5px;
+    }
+
+    #fila-3 .conector-1 .fin, #fila-4 .conector .fin, #fila-5 .conector .fin, #fila-7 .conector .fin {
+        left: -5px;
+    }
+
+    #fila-2 .conector {
+        width: 1px;
+        top: 98.5%;
+        right: 50%;
+        transform: initial;
+        height: 8rem;
+    }
+
+    #fila-3 .conector-1 {
+        width: 1px;
+        top: 100%;
+        left: 50%;
+        bottom: -50%;
+        transform: initial;
+    }
+
+    #fila-4 .conector {
+        width: 10%;
+        height: 32vh;
+        height: calc(32% + 9rem);
+    }
+
+    #fila-5 .conector {
+        width: 25%;
+        top: 67%;
+        height: 35vh;
+        height: calc(33% + 12rem);
+    }
+
+    #fila-7 .conector {
+        width: 1px;
+        top: 83%;
+        left: 25%;
+        transform: initial;
+        height: 40vh;
     }
 }
 
@@ -2099,17 +2124,27 @@ RESPONSIVE
         max-width: 100%;
     }
 
+    #fila-2 .txt-puntos {
+        top: initial;
+        left: initial;
+        right: 5%;
+        bottom: 3%;
+    }
+
     #fila-5 .ci-4-5-6 {
         margin-bottom: 10%;
+    }
+
+    #fullpage #fila-5 h2 {
+        font-size: 1.6rem;
     }
 
     #fila-5 .right-5 {
         margin-bottom: 3rem;
     }
 
-    #fila-5 .conector {
-        width: 1px;
-        top: 90%;
+    #fila-5 .txt-puntos.tx-2 {
+        display: none
     }
 
     #fullpage #fila-6 .graf .num {
@@ -2144,18 +2179,6 @@ RESPONSIVE
         top: 5%;
         left: 2.2rem;
         right: initial
-    }
-
-    #fila-8 .col-blanca {
-        margin-top: 10vh;
-    }
-
-    #fila-8 .col-cyan {
-        margin-bottom: 10vh;
-    }
-
-    #fila-8 .conector {
-        top: 95%;
     }
 
     #fila-8 .txt-puntos.tx-1 {
@@ -2217,23 +2240,86 @@ RESPONSIVE
     .popover-body .hnum {
         margin-bottom: 0.6rem;
     }
+
+    /*Conectores 576*/
+    #fila-3 .conector-1 {
+        bottom: -30%;
+    }
+
+    #fila-3 .conector-2 {
+        width: 1px;
+        top: 83%;
+        right: 25%;
+        transform: initial;
+        height: 12rem;
+    }
+
+    #fila-4 .conector {
+        width: 20%;
+        top: 85%;
+        left: 10%;
+        height: 13rem;
+        transform: initial;
+    }
+
+    #fila-5 .conector {
+        width: 25%;
+        top: 67%;
+        height: 35vh;
+        height: calc(100% + 12rem);
+    }
+
+    #fila-6 .conector {
+        width: 58%;
+        top: 70%;
+        right: -30%;
+        height: 90%;
+        height: calc(30% + 7rem);
+    }
+}
+
+@media screen and (max-height: 700px) and (orientation:landscape) {
+    #fila-6 .graf {
+        margin-top: 0;
+    }
+
+    #fila-6 .left-6 {
+        margin-top: 0;
+    }
+
+    #fila-6 .large {
+        margin-bottom: .5rem;
+    }
+
+    #fila-6 .large + p {
+        margin-bottom: 0rem;
+    }
+
+    #fila-6 .txt-puntos.tx-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #fullpage #fila-6 .col-md-3 .large, #fullpage #fila-7 .col-md-3 .large {
+        font-size: .8rem;
+    }
+
+    #fila-8 h3 {
+        font-size: 1.8rem;
+    }
 }
 
 /*Controlar salto de animacion*/
-/*.section h2, .section .txt-puntos, .section .txt-cuadros, .section h1, .section p, .section .pared, .section .pared, .section .elem, .section .animacion, .section .lugar {
-    opacity: 0 !important;
-    transition: opacity 500ms linear;
+.section .container, .section .conector {
+    opacity: 0 ;
+    transition: opacity 300ms linear;
 }
-*/
-.section .container,
-.section .conector {
-   opacity: 0 ;
-   transition: opacity 300ms linear; 
+
+.section.animate .container, .section.animate .conector {
+    opacity: 1;
 }
-.section.animate .container,
-.section.animate .conector {
-   opacity: 1;
-}
+
 .section .txt-cuadros {
     background: transparent;
     transition: opacity 500ms 1000ms;
@@ -2242,19 +2328,7 @@ RESPONSIVE
 .section.animate .txt-cuadros {
     background: #ffffff;
 }
+
 #fila-1 .container {
     opacity: 1;
 }
-/*
-.section.active h2, 
-.section.active .txt-puntos, 
-.section.active .txt-cuadros, 
-.section.active h1, 
-.section.active p, 
-.section.active .pared, 
-.section.active .pared, 
-.section.active .elem, 
-.section.active .animacion, 
-.section.active .lugar {
-    opacity: 1 !important;
-}*/
