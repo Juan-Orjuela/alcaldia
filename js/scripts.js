@@ -5,27 +5,27 @@ $(document).ready(function () {
         anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion-tunal', 'construccion-fontanar', 'construccion-sancristobal', 'construccion-restantes', 'ubicacion', 'footer'],
         sectionsColor: ['#EDEDED', '#EDEDED', '#EDEDED', '#EDEDED', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#C4CBCE', '#EDEDED'],
         navigation: true,
-        autoScrolling:false,
+        autoScrolling: false,
         responsiveWidth: 768,
-		responsiveHeight: 490,
+        responsiveHeight: 490,
         navigationPosition: 'right',
         navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Avances Tunal', 'Avances Fontanar del Río', 'Avances San Cristobal', 'Próximas licitaciones', 'Ubicación', 'Cierre'],
         afterLoad: function (anchorLink, index) {
-            if(index == 1 & iniciar == 0) {
+            if (index == 1 & iniciar == 0) {
                 animarSlide(1);
                 iniciar++;
             }
         },
-        onLeave: function(index, nextIndex, direction) {
+        onLeave: function (index, nextIndex, direction) {
             console.log('Estoy en ' + index + ' Voy a ' + nextIndex + ' scrollando hacia ' + direction);
-            if (direction == 'down'){
+            if (direction == 'down') {
                 animarSlide(nextIndex);
-                $('#fila-'+nextIndex).addClass('animate');
+                $('#fila-' + nextIndex).addClass('animate');
             } else if (direction == 'up') {
-                $('#fila-'+index).removeClass('animate');
+                $('#fila-' + index).removeClass('animate');
             }
         }
-        
+
 
     });
     //methods
@@ -80,7 +80,7 @@ $(document).ready(function () {
             autoplay: false,
             easing: 'linear'
         });
-        
+
         //Animacion de texturas
         var animacionTxt = anime.timeline({
             loop: false,
@@ -99,8 +99,8 @@ $(document).ready(function () {
                 duration: 1000,
                 delay: anime.stagger(200)
             }, '-=200');
-        
-            //Aniamcion conectores
+
+        //Aniamcion conectores
         var animacionConector = anime.timeline({
             loop: false,
             autoplay: false,
@@ -122,8 +122,8 @@ $(document).ready(function () {
                 opacity: [0, 1],
                 duration: 500
             });
-        
-            //Animacion Ilustraciones
+
+        //Animacion Ilustraciones
         var animacionIlustra = anime.timeline({
             loop: false,
             autoplay: false,
@@ -163,11 +163,38 @@ $(document).ready(function () {
                     duration: 500
                 },
                 delay: anime.stagger(200 * 1)
-                
-                
+
+
             }, '-=500');
 
-            
+        //animacion rotulos (lugares)
+        var animacionLugares = anime.timeline({
+            loop: false,
+            autoplay: false,
+            easing: 'easeOutBack'
+        }).add({
+            targets: '#fila-' + slide + ' .lugar.izq',
+            translateX: {
+                value: [-100, 0],
+                duration: 1000
+            },
+            opacity: {
+                value: [0, 1],
+                duration: 800
+            },
+            delay: anime.stagger(200, {start: 800})
+        }).add({
+            targets: '#fila-' + slide + ' .lugar.der',
+            translateX: {
+                value: [100, 0],
+                duration: 1000
+            },
+            opacity: {
+                value: [0, 1],
+                duration: 800
+            },
+            delay: anime.stagger(200, {start: 800})
+        });
 
         function animCustom() {
             switch (slide) {
@@ -435,17 +462,17 @@ $(document).ready(function () {
                     break;
                 case 8:
                     animacion.add({
-                            targets: '#fila-8 .col-md-6, #fila-8 .recuadro',
-                            translateY: {
-                                value: [60, 0],
-                                duration: 800
-                            },
-                            opacity: {
-                                value: [0, 1],
-                                duration: 1000
-                            },
-                            delay: anime.stagger(600)
-                        });
+                        targets: '#fila-8 .col-md-6, #fila-8 .recuadro',
+                        translateY: {
+                            value: [60, 0],
+                            duration: 800
+                        },
+                        opacity: {
+                            value: [0, 1],
+                            duration: 1000
+                        },
+                        delay: anime.stagger(600)
+                    });
                     break;
                 default:
                     console.log('Si es el slide 223423');
@@ -456,6 +483,7 @@ $(document).ready(function () {
         animacionConector.play();
         animacionIlustra.play();
         animacionTxt.play();
+        animacionLugares.play();
     } //Fin animar Slide
 
     $(function () {
@@ -466,30 +494,30 @@ $(document).ready(function () {
             animation: false
         })
     });
-    
-    function abrirPop () {
-        
-        
-        if ( $(this).hasClass('activo') ) {
+
+    function abrirPop() {
+
+
+        if ($(this).hasClass('activo')) {
             $(this).blur();
             $(this).removeClass('activo');
-            
-            
+
+
         } else {
             $('.hotspot').removeClass('activo');
             $(this).addClass('activo');
-            
+
         }
-        
-        
+
+
     }
-    
+
     $('[data-toggle="popover"]').on('click', function (e) {
         e.preventDefault();
     });
     $('.hotspot').on('click', abrirPop);
-    
-    
-    
+
+
+
     //Fin
 });

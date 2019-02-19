@@ -316,9 +316,11 @@ Fila 2
 }
 
 #fila-2 .conector {
-    width: 20%;
-    top: 60vh;
-    left: 55vw;
+    width: 100%;
+    max-width: 280px;
+    top: 50%;
+    right:0;
+    transform: translateX(100%);
     height: 45vh;
 }
 
@@ -418,10 +420,11 @@ Fila 3
 }
 
 #fila-3 .conector-1 {
-    width: 20vw;
-    top: 20vh;
-    right: 45vw;
-    height: 20vh;
+    width: 40%;
+    top:50%;
+    left: 0;
+    bottom: -5%;
+    transform: translateX(-65%);
 }
 
 #fila-3 .conector-1 .linea {
@@ -437,9 +440,10 @@ Fila 3
 }
 
 #fila-3 .conector-2 {
-    width: 12vw;
-    top: 65vh;
-    left: 75vw;
+    width: 40%;
+    top: 50%;
+    right: 0;
+    transform: translateX(100%);
     height: 55vh;
 }
 
@@ -475,16 +479,23 @@ Fila 3
     left: 40%;
 }
 
-#fila-3 .lugar {
-    bottom: 12%;
+#fila-3 .lugar.lugar-1 {
+    bottom: 2%;
     left: 0;
 }
-
+#fila-3 .lugar.lugar-2 {
+    bottom: -5%;
+    bottom: calc(2% - 1.9em);
+    left: 0;
+}
 /*
 ============
 Fila 4
 ============
 */
+#fila-4 .col-md-6 {
+    
+}
 #fila-4 .num-wrapper {
     position: relative;
 }
@@ -519,22 +530,23 @@ Fila 4
 }
 
 #fila-4 .conector {
-    width: 1px;
-    top: 52vh;
-    left: 25vw;
-    height: 55vh;
+    width: 40%;
+    top: 68.4%;
+    left: 0;
+    height: 52vh;
+    transform: translateX(-100%);
 }
 
 #fila-4 .conector .linea {
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     border-top: 1px dashed black;
-    border-right: 1px dashed black;
+    border-left: 1px dashed black;
 }
 
 #fila-4 .conector .fin {
-    right: -10px;
+    left: -10px;
 }
 
 #fila-4 .txt-puntos {
@@ -558,8 +570,8 @@ Fila 4
 }
 
 #fila-4 .lugar {
-    bottom: 12%;
-    left: 0;
+    bottom: 10%;
+    right: 0;
 }
 
 /*
@@ -653,22 +665,23 @@ Fila 5
 }
 
 #fila-5 .conector {
-    width: 1px;
-    top: 65vh;
-    left: 35vw;
+    width: 25%;
+    top: 67%;
+    left: 0;
     height: 50vh;
+    transform: translateX(-100%);
 }
 
 #fila-5 .conector .linea {
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     border-top: 1px dashed black;
-    border-right: 1px dashed black;
+    border-left: 1px dashed black;
 }
 
 #fila-5 .conector .fin {
-    right: -10px;
+    left: -10px;
 }
 
 #fila-5 .txt-puntos.tx-1 {
@@ -707,12 +720,18 @@ Fila 5
     transform-origin: 10% 50%;
 }
 
-#fila-5 .lugar {
-    top: -8%;
-    right: 0;
-    text-align: right;
+#fila-5 .lugar-1 {
+    top: 75%;
+    left: 0;
 }
-
+#fila-5 .lugar-2 {
+    top: 7%;
+    right: 0;
+}
+#fila-5 .lugar-3 {
+    bottom: 8%;
+    left: 0;
+}
 /*
 ============
 Fila 6
@@ -773,10 +792,11 @@ Fila 6
 }
 
 #fila-6 .conector {
-    width: 15vw;
-    top: 75vh;
-    left: 50vw;
+    width: 58%;
+    top: 70%;
+    right: -30%;
     height: 38vh;
+    
 }
 
 #fila-6 .conector .linea {
@@ -889,18 +909,22 @@ Fila 7
 #fila-7 #il-14 .animacion {
     background-image: url('../imgs/ilustracion-14/animacion/sprite.png')
 }
-
+#fila-7 .large {
+    text-align: center;
+}
 #fila-7 .small {
     line-height: 1.3;
     font-weight: 500;
     font-size: 100%;
+    text-align: center;
 }
 
 #fila-7 .conector {
-    width: 15vw;
-    top: 75vh;
-    right: 48vw;
-    height: 32vh;
+    width: 30%;
+    top: 58%;
+    left: 0;
+    transform: translateX(-100%);
+    height: 48vh;
 }
 
 #fila-7 .conector .linea {
@@ -940,12 +964,19 @@ Fila 7
     right: 10%;
 }
 
-#fila-7 .lugar {
-    top: -2%;
+#fila-7 .lugar-1 {
+    top: 13%;
     left: 0;
-    z-index: 5
 }
-
+#fila-7 .lugar-2 {
+    top: 13%;
+    right: 0;
+}
+#fila-7 .lugar-3 {
+    bottom: -25%;
+    left: 43%;
+    z-index: 5;
+}
 /*
 ============
 Fila 8
