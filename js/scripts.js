@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var iniciar = 0;
     //INCIAR FULLPAGE
     $('#fullpage').fullpage({
         anchors: ['introduccion', 'superficie', 'inversion', 'financiacion', 'construccion-tunal', 'construccion-fontanar', 'construccion-sancristobal', 'construccion-restantes', 'ubicacion', 'footer'],
@@ -10,20 +11,21 @@ $(document).ready(function () {
         navigationPosition: 'right',
         navigationTooltips: ['Introducción', 'Superficie', 'Inversión', 'Financiación', 'Avances Tunal', 'Avances Fontanar del Río', 'Avances San Cristobal', 'Próximas licitaciones', 'Ubicación', 'Cierre'],
         afterLoad: function (anchorLink, index) {
-            animarSlide(index);
-        },
-        onLeave: function(origin, destination, direction){
-            var leavingSection = this;
-            console.log(origin);
-            //después de abandonar la sección 2
-            if(origin.index == 1 && direction =='down'){
-                console.log("Me estoy moviendo a la sección 3!");
+            if(index == 1 & iniciar == 0) {
+                animarSlide(1);
+                iniciar++;
             }
-    
-            else if(origin.index == 1 && direction == 'up'){
-                console.log("Me estoy moviendo a la sección 1!");
+        },
+        onLeave: function(index, nextIndex, direction) {
+            console.log('Estoy en ' + index + ' Voy a ' + nextIndex + ' scrollando hacia ' + direction);
+            if (direction == 'down'){
+                animarSlide(nextIndex);
+                $('#fila-'+nextIndex).addClass('animate');
+            } else if (direction == 'up') {
+                $('#fila-'+index).removeClass('animate');
             }
         }
+        
 
     });
     //methods
@@ -64,7 +66,7 @@ $(document).ready(function () {
             $(this).append('<i style=\"top: ' + pTop + 'px; left: ' + pLeft + 'px\"></i>');
         }
     });
-    //Bajar con flechas
+    //Bajar con flecha en intro
     $('.bajar').on('click', function (e) {
         e.preventDefault();
         $.fn.fullpage.moveSectionDown();
@@ -97,59 +99,54 @@ $(document).ready(function () {
                 duration: 1000,
                 delay: anime.stagger(200)
             }, '-=200');
-
+        
+            //Aniamcion conectores
         var animacionConector = anime.timeline({
             loop: false,
             autoplay: false,
             easing: 'linear'
-
         })
             .add({
                 targets: '#fila-' + slide + ' .linea',
                 width: [0, '100%'],
-                duration: 1500,
-                delay: 3000
-                
+                duration: 1000,
+                delay: 500
             })
             .add({
                 targets: '#fila-' + slide + ' .linea',
                 height: [0, '100%'],
-                duration: 1500
+                duration: 1000
             })
             .add({
                 targets: '#fila-' + slide + ' .fin',
                 opacity: [0, 1],
                 duration: 500
             });
+        
+            //Animacion Ilustraciones
         var animacionIlustra = anime.timeline({
             loop: false,
             autoplay: false,
             easing: 'linear'
         })
-            /*.add({
+            .add({
                 targets: '#fila-' + slide + ' .piso',
-                translateY: {
-                    value: [-200, 0],
-                    duration: 800,
-                    easing: 'easeOutQuad'
-                },
-                opacity: {
-                    value: [0, 1],
-                    duration: 200
-                }
-            })*/
+                opacity: [0, 1],
+                duration: 300,
+                delay: anime.stagger(200)
+            })
             .add({
                 targets: '#fila-' + slide + ' .pared',
                 translateY: {
-                    value: [-200, 0],
-                    duration: 600,
+                    value: [-400, 0],
+                    duration: 700,
                     easing: 'easeOutQuad'
                 },
                 opacity: {
                     value: [0, 1],
                     duration: 200
                 },
-                delay: anime.stagger(500)
+                delay: anime.stagger(200)
             })
             .add({
                 targets: '#fila-' + slide + ' .elem',
@@ -157,7 +154,7 @@ $(document).ready(function () {
                     value: [0, 1],
                     duration: 600
                 },
-                delay: anime.stagger(500)
+                delay: anime.stagger(200)
             })
             .add({
                 targets: '#fila-' + slide + ' .animacion',
@@ -165,12 +162,12 @@ $(document).ready(function () {
                     value: [0, 1],
                     duration: 500
                 },
-                delay: anime.stagger(200 * 1),
-                complete: animacionConector.play()
+                delay: anime.stagger(200 * 1)
+                
                 
             }, '-=500');
 
-
+            
 
         function animCustom() {
             switch (slide) {
@@ -183,25 +180,25 @@ $(document).ready(function () {
                         },
                         opacity: {
                             value: [0, 1],
-                            duration: 2000
+                            duration: 1500
                         }
                     })
                         .add({
                             targets: '#fila-1 p',
                             translateY: {
                                 value: [20, 0],
-                                duration: 800
+                                duration: 500
                             },
                             opacity: {
                                 value: [0, 1],
-                                duration: 2000
+                                duration: 1500
                             }
                         }, '-=800')
                         .add({
                             targets: '#fila-1 .carrusel',
                             opacity: [0, 1],
                             duration: 1000
-                        }, '-=1500')
+                        }, '-=2000')
                         .add({
                             targets: '#fila-1 .bajar',
                             opacity: [0, 1],
@@ -456,6 +453,7 @@ $(document).ready(function () {
         }
         animCustom();
         animacion.play();
+        animacionConector.play();
         animacionIlustra.play();
         animacionTxt.play();
     } //Fin animar Slide

@@ -2213,11 +2213,13 @@ RESPONSIVE
     transition: opacity 500ms linear;
 }
 */
-.section .container {
+.section .container,
+.section .conector {
    opacity: 0 ;
-   transition: opacity 500ms linear; 
+   transition: opacity 300ms linear; 
 }
-.section.active .container {
+.section.animate .container,
+.section.animate .conector {
    opacity: 1;
 }
 .section .txt-cuadros {
@@ -2225,8 +2227,11 @@ RESPONSIVE
     transition: opacity 500ms 1000ms;
 }
 
-.section.active .txt-cuadros {
+.section.animate .txt-cuadros {
     background: #ffffff;
+}
+#fila-1 .container {
+    opacity: 1;
 }
 /*
 .section.active h2, 
