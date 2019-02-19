@@ -16,11 +16,15 @@ $(document).ready(function () {
                 iniciar++;
             }
             else if (index != 1 & iniciar == 0) {
-                console.log('Apareci en '+index)
+                //console.log('Apareci en '+index);
+                iniciar++;
+                for(var i = 1; i < index; i++) {
+                    $('#fila-' + i).addClass('animate');
+                }
             }
         },
         onLeave: function (index, nextIndex, direction) {
-            console.log('Estoy en ' + index + ' Voy a ' + nextIndex + ' scrollando hacia ' + direction);
+            //console.log('Estoy en ' + index + ' Voy a ' + nextIndex + ' scrollando hacia ' + direction);
             if (direction == 'down') {
                 animarSlide(nextIndex);
                 $('#fila-' + nextIndex).addClass('animate');
@@ -478,7 +482,7 @@ $(document).ready(function () {
                     });
                     break;
                 default:
-                    console.log('Si es el slide 223423');
+                    console.log('Fin de animación');
             }
         }
         animCustom();
