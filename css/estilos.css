@@ -795,7 +795,7 @@ Fila 6
     width: 58%;
     top: 70%;
     right: -30%;
-    height: 38vh;
+    height: 42vh;
     
 }
 
@@ -837,7 +837,7 @@ Fila 6
 }
 
 #fila-6 .lugar {
-    bottom: 12%;
+    bottom: 0;
     left: 0;
 }
 
@@ -1348,21 +1348,12 @@ RESPONSIVE
     #fila-1 .bajar {
         width: 40px;
         height: 40px;
-        bottom: 5rem;
+        bottom: 3rem;
         margin-left: -20px;
     }
 
     #fila-2 .cont-ilustracion {
         margin-top: -1.5rem;
-    }
-
-    #fila-3 .conector-1 {
-        height: 15vh;
-    }
-
-    #fila-3 .conector-2 {
-        width: 10vw;
-        left: 80vw;
     }
 
     #fila-3 .cont-ilustracion {
@@ -1397,7 +1388,9 @@ RESPONSIVE
     #fila-5 .ci-6 {
         right: 29%;
     }
-
+    #fila-6 .graf {
+        margin-top: -2rem;
+    }
     #fila-6 .ci-7-8-9 {
         width: 90%;
         position: relative;
@@ -1442,9 +1435,7 @@ RESPONSIVE
         max-width: initial;
     }
 
-    #fila-8 .conector {
-        top: 87vh;
-    }
+    
 
     #fila-9 #mapa-cont {
         max-width: 600px;
@@ -1457,20 +1448,10 @@ RESPONSIVE
     }
 
     #fullpage {
-        margin-top: 3.7rem;
+        margin-top: 0;
     }
 }
 
-@media screen and (min-width: 768px) and (max-height: 650px) {
-    .section .conector {
-        opacity: 0;
-        transition: opacity 500ms 1000ms;
-    }
-
-    .section.active .conector {
-        opacity: 1;
-    }
-}
 
 @media screen and (max-width: 992px) {
     .txt-cuadros {
